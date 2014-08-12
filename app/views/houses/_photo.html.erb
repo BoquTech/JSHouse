@@ -1,0 +1,6 @@
+<%= form_for ([@house, @house.pictures.build]) do |f| %>
+  <p>
+    <%= f.file_field :photo %>
+    <%= f.hidden_field :photo_cache %>
+  </p>
+<% end %>
