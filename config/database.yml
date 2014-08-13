@@ -52,5 +52,3 @@ test:
 production:
   <<: *default
   database: jshouse_production
-  username: jshouse
-  password: <%= ENV['JSHOUSE_DATABASE_PASSWORD'] %>

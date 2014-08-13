@@ -281,26 +281,8 @@ $(document).ready(function(){
 					    </li>
 				    </ul><!--经纪人信息-->
 				    <section class="wrap">
-					    <form name="form" method="post" action="#">
-						    <div class="form-line">
-							    <input type="text" id="realname"  name="form[comment][contact][realname]" required maxlength="255" placeholder="姓名"
-							    />
-						    </div><!--输入用户真实姓名-->
-						    <div class="form-line">
-							    <input type="text" id="mobile" name="form[comment][contact][mobile]" required maxlength="16" placeholder="手机号码"/>
-						    </div>
-						    <div class="form-line">
-							    <input type="email" id="email" name="form[comment][contact][email]" maxlength="255" placeholder="电子邮箱"/>
-						    </div><!--输入电子邮箱-->
-						    <div class="form-line">
-							    <textarea id="body" name="form[comment][body]" required>我对此房源及类似房源感兴趣，希望能获得信息咨询或购房帮助。</textarea>
-						    </div><!--输入意见-->
-						    <button type="submit">
-							    提交
-						    </button>
-						    <input type="hidden" id="form_token" name="form[token]"
-							value="#">
-					    </form>
+					    <iframe src="../feedbacks/new" width="260" height="320" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes">
+				    	</iframe>
 				    </section><!--信息栏-->
                 </section><!--用户信息提交-->
             </section>
