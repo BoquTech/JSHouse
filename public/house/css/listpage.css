@@ -1,0 +1,69 @@
+
+
+
+/*主体部分*/
+#house{
+	margin-top:20px;
+	height:100%;
+	position:relative;
+
+
+}
+#house h1{
+	height:auto;
+}
+
+#house li{
+	float:left;
+
+}
+
+
+.hot{
+	background:#f8f8f8;
+	border:1px solid #fff;
+	margin:10px;
+	height:226px;
+	width:680px;
+	float:left;
+	padding:10px;
+}
+
+.hot img{
+	height:226px;
+	width:400px;
+	
+}
+
+
+.abstract{
+	width:260px;
+	float:right;
+}
+.abstract h1{
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #E34339;
+    line-height: 30px;
+}
+
+.abstract small{
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    color: #818080;
+    line-height: 24px;
+}
+
+.abstract p{
+	margin-top:10px;
+}
+.number{
+	font-size: 20px;
+    font-weight: bold;
+    color: #E34339;
+
+}

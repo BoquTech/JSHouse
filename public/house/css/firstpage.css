@@ -1,0 +1,303 @@
+/*--通用*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif; }
+
+a {
+  text-decoration: none;
+  font-family:"Hiragino Sans GB", "Microsoft Yahei UI", sans-serif;
+}
+
+.float-right{
+	float:right;
+}
+
+.float-left{
+	float:left;
+}
+
+.containers{
+	width:980px;
+	margin:auto;
+	height:100%;
+	position:relative;
+}
+
+.clear{
+  font:0px/0px sans-serif;
+  clear:both;
+  display:block;
+
+}
+
+/*头部*/
+#header{
+	height:65%;
+	position:relative;
+}
+#random2{
+	position:absolute;
+	height:100%;
+}
+.banner{
+	height:100%;
+
+}
+.nav{
+	position:absolute;
+
+	z-index:10;
+	left:25%;
+	top:5%;
+	right:25%;
+
+}
+
+.nav img{
+  float:left;
+}
+.nav a{
+	font-size:16px;
+	margin-left:40px;
+	margin-top:2%;
+	color:#fff;
+    float:left;
+    font-weight:bold;
+}
+.nav a:hover{
+	color:#993300;
+}
+.icon {
+	float:left;
+    height: 50px;
+    width: 120px;
+	background: url("../images/icon1.png") no-repeat ;
+}
+
+
+.home-icon {
+	float:left;
+	
+    height: 20px;
+    width: 20px;
+	background: url("../images/home-icon.png") no-repeat ;
+}
+
+.city-icon{
+	float:left;
+    height: 20px;
+    width: 20px;
+	background: url("../images/city-icon.png") no-repeat ;
+}
+
+.search{
+  margin-right:5px;
+
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 70%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none; /* remove the search and cancel icon */
+}
+
+/* search input field */
+input[type=search] {
+  background: #fff url("../images/search.jpg") no-repeat 9px center;
+  padding: 9px 10px 9px 32px;
+  border: solid 1px #fff;
+  width: 70px;
+  height:3px;
+  margin-right:20px;
+
+  
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+
+
+.information1{
+margin-left:50%;
+margin-top:20%;
+
+width:40%;
+padding:10px;
+}
+.information1 h1{
+	color:#fff;
+	font-size:45px;
+
+}
+.information1 p{
+	font-size:17px;
+	color:#fff;
+    font-weight: bold;
+}
+.information1 a{
+    color:#1a0e08;
+    padding:10px;
+    font-size:15px;
+    margin-left:80%;
+    background-color:#fff;
+}
+
+.information2{
+margin-left:50%;
+margin-top:10%;
+width:40%;
+padding:10px;
+}
+
+.information2 h1{
+	color:#fff;
+	font-size:45px;
+
+}
+
+.information2 p{
+	font-size:17px;
+	color:#fff;
+	font-weight: bold;
+
+ 
+}
+.information2 a{
+    color:#352a2c;
+    padding:10px;
+    font-size:15px;
+    margin-left:80%;
+    background-color:#fff;
+}
+
+
+.information3{
+background-color: #000;
+opacity: 0.7;
+margin-left:50%;
+margin-top:20%;
+
+width:40%;
+padding:10px;
+}
+.information3 h1{
+	color:#fff;
+	font-size:45px;
+
+}
+
+.information3 p{
+	font-size:17px;
+	color:#fff;
+    font-weight: bold;
+}
+.information3 a{
+    color:#352a2c;
+    padding:10px;
+    font-size:15px;
+    margin-left:80%;
+    background-color:#fff;
+}
+
+
+
+/*主体部分*/
+#house{
+	margin-top:1%;
+
+	position:relative;
+
+
+}
+#house h1{
+	margin:10px;
+}
+
+#house li{
+	float:left;
+}
+
+
+.hot{
+	border:1px solid #fff;
+	margin:10px;
+	height:220px;
+	width:300px;
+}
+
+.hot img{
+	height:220px;
+	width:300px;
+	position:absolute;
+}
+.price{
+    margin-top:188px;
+	position:absolute;
+	height:22px;
+	width:290px;
+	background-color: #000;
+	font-size:13px;
+	color:#fff;
+	z-index:1;
+	padding:5px;
+}
+
+/*--底部--*/
+#footer{
+	margin-top:40px;
+	background:#ec462c;
+	position:relative;
+    
+}
+
+.ft-top{
+	padding-top:10px;
+	height:100%;
+	padding-bottom:10px;
+}
+.ft-top ul{
+	float:right;
+}
+
+.ft-top li{
+	color:#fff;
+    margin-left:10px;
+    float:right;
+}
+
+.ft-top a{
+	color:#fff;
+	font-size:13px;
+	font-weight:bold;
+}
+
+.ft-bottom{
+	border-top:1px solid #fff;
+	padding-bottom:20px;
+}
+
+.ft-bottom h1{
+	margin-top:10px;
+	color:#fff;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.ft-bottom a{
+	margin-left:10px;
+	color:#fff;
+	font-size:11px;
+	font-weight:bold;
+}

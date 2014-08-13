@@ -1,0 +1,293 @@
+
+
+
+
+
+
+/*主体部分*/
+
+#bd{
+   position:relative;   
+}
+
+.core{
+  float:left;
+  width: 680px;
+  position:relative;
+}
+
+ .abstract{
+ position:relative;
+}
+.abstract ul{
+  width:60%;
+ position:relative;
+ float:left;
+}
+
+.abstract h1{
+    float: left;
+    width:100%;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 26px;
+  color: #ec462c;
+  line-height: 30px;
+}
+.abstract h1 small{
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    color: #818080;
+    line-height: 24px;
+}
+
+.abstract li{
+  margin-bottom:10px;
+}
+.kind{
+  margin-right: 10px;
+}
+.price{
+  width:35%;
+  position: relative;
+ float:right;
+ margin-top:6%;
+  color:#ec462c;
+ font-size:30px;
+}
+
+.chack{
+  background-color: #ec462c;
+  color:#fff;
+  padding:2px;
+  font-size: 13px;
+  font-weight:bold;
+}
+
+
+/*图片轮播*/
+.gallery { 
+  width:680px;
+ height:500px;
+ margin-top:20px;  
+ position:relative; 
+ font-family:verdana, arial, sans-serif; 
+ background:#f8f8f8; }
+
+/*抬头栏*/
+
+.fix1{
+position: fixed; 
+top: 0px; 
+width: 680px;
+z-index:100;
+
+}
+
+.fix2{
+width: 680px;
+position: relative;
+margin-top:20px;
+}
+
+
+.flat-content-navbar {
+
+    position: relative;
+    box-shadow: inset 0 0 0 1px #f8f8f8;
+   border: 1px solid #f8f8f8;
+    height: 41px;
+    line-height: 41px;
+    background-color:#FFF;
+    width:680px;
+   
+    
+}
+
+.flat-content-navbar li {
+    float: left;
+    width: 130px;
+    text-align: center;
+}
+
+
+.tab-item1{
+     background-color:#ec462c;
+     font-family:Georgia, "Times New Roman", Times, "Hiragino Sans GB", "Microsoft Yahei UI", serif;
+    color: #FFF;
+    display: block;
+    position: relative;
+    font-weight:bold;
+}
+
+.tab-item2{
+  background-color:#FFF;
+  font-family: Georgia, "Times New Roman", Times, "Hiragino Sans GB", "Microsoft Yahei UI", serif;
+    color: #ec462c;
+    display: block;
+    position: relative;
+}
+
+
+
+
+/*详细信息*/
+
+#deal-stuff{
+  margin-top: 20px;   
+    width:680px;
+    position:relative;
+}
+#deal-stuff h1{
+  font-size: 25px;
+  color:#ec462c;
+  margin-top:30px;
+  width:auto;
+  border-bottom:1px solid #f8f8f8;
+}
+
+ .introduce p {
+  margin: 21px 0;
+  color: #000;
+}
+
+.introduce h3{
+  font-size:15px;
+  color:#fff;
+  padding:5px;
+  background-color:#ec462c;
+  margin-top:10px;
+  font-weight:bold;
+}
+
+.introduce li{
+  margin:10px;
+}
+
+.ppt{
+  margin-top:20px;
+  width:680px;
+  height:450px;
+}
+
+
+.map{
+ position:relative ;
+ padding:0px;
+ margin-top:20px;
+ height:650px;
+}
+.google{
+  margin-top:20px;
+  background-color: #f8f8f8;
+  position:absolute;
+  padding:20px;
+}
+
+
+
+/*侧栏*/
+
+.peripheral{
+float: right;
+  width: 280px;
+  margin-top:10px;
+
+}
+
+.peripheral h3 {
+  padding-left: 10px;
+  border-bottom: 1px solid #f8f8f8;
+  border-left: 3px solid #ec462c;
+  font-size: 15px;
+  color: #000;
+  line-height: 26px;
+}
+
+.information ul {
+  margin: 0 0 20px -60px;
+}
+.information ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.information li {
+  float: left;
+  width: 256px;
+  height: 60px;
+  padding-left: 24px;
+  margin: 20px 0 0 60px;
+}
+
+.information li img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.information li h5 {
+  margin-bottom: 5px;
+  font-size: 15px;
+  line-height: 15px;
+  color: #ec462c;
+}
+
+.information li p {
+  font-size: 13px;
+  color: #818080;
+  line-height: 18px;
+}
+
+
+.wrap {
+  padding: 20px 10px;
+  margin: 20px 0;
+  background: #f8f8f8;
+}
+
+.form-line {
+  margin-bottom: 15px;
+}
+
+
+ .form-line textarea {
+  display: block;
+  width: 240px;
+  height: 100px;
+  padding: 9px;
+  border: 1px solid #cdcdcd;
+  color:##818080;
+}
+ .mobile,
+.email,
+ .realname,
+{
+  width: 300px;
+  height: 30px;
+}
+
+.form-line input{
+  width: 240px;
+  height: 20px;
+  padding: 9px;
+  border: 1px solid #cdcdcd;
+  color:##818080;
+}
+.form-line.register {
+  color: #45484c
+}
+
+
+.wrap button {
+  width: 260px;
+  height: 40px;
+  background: #ec462c;
+  border: 0;
+  font-weight: 20px;
+  color: #fff;
+}
+
