@@ -1,0 +1,42 @@
+
+
+
+/*主体部分*/
+#city{
+	
+	position:relative;
+
+
+}
+#city h1{
+	height:auto;
+}
+
+#city li{
+	float:left;
+}
+
+
+.hot{
+	border:1px solid #fff;
+	margin:10px;
+	height:220px;
+	width:300px;
+}
+
+.hot img{
+	height:220px;
+	width:300px;
+	position:absolute;
+}
+
+.price{
+    margin-top:188px;
+	position:absolute;
+	height:22px;
+	width:290px;
+	
+	color:#fff;
+	z-index:1;
+	padding:5px;
+}
