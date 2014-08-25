@@ -41,14 +41,30 @@ div {
    height: 25px;
    font-size:15px;
    margin-left:5px;
-   placeholder:"姓名";
+   border:1px solid #A4A4A4;
   }
   #feedback_message{
   width:245px;
   height:70px;
   font-size:15px;
   margin-left:5px;
+  border:1px solid #A4A4A4;
   }
+
+  input[type="submit"]{
+  display:block;
+  height:35px;
+  width:249px;
+  color:#fff;
+  background-color:#e90000;
+  border:1px solid #e90000;
+  margin-left:5px;
+  font-size:15px;
+   border-radius:2px;
+}
+  input[type="submit"]:hover{
+  background-color:#ff0000;
+}
 
 #notice {
   color: green;
@@ -61,6 +77,7 @@ div {
 }
 
 #error_explanation {
+  display:none;
   width: 450px;
   border: 2px solid red;
   padding: 7px;
