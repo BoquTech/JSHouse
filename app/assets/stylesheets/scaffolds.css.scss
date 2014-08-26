@@ -63,7 +63,15 @@ div {
    border-radius:2px;
 }
   input[type="submit"]:hover{
+  display:block;
+  height:35px;
+  width:249px;
+  color:#fff;
   background-color:#ff0000;
+  border:1px solid #ff0000;
+  margin-left:5px;
+  font-size:15px;
+   border-radius:2px;
 }
 
 #notice {

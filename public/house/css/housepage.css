@@ -114,7 +114,7 @@ margin-top:20px;
 
 .tab-item1{
      background-color:#ec462c;
-     font-family:Georgia, "Times New Roman", Times, "Hiragino Sans GB", "Microsoft Yahei UI", serif;
+     font-family:Georgia, "Microsoft Yahei" ;
     color: #FFF;
     display: block;
     position: relative;
@@ -123,7 +123,7 @@ margin-top:20px;
 
 .tab-item2{
   background-color:#FFF;
-  font-family: Georgia, "Times New Roman", Times, "Hiragino Sans GB", "Microsoft Yahei UI", serif;
+  font-family: "Microsoft Yahei" ;
     color: #ec462c;
     display: block;
     position: relative;

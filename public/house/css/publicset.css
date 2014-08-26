@@ -3,14 +3,14 @@ html, body {
   height: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
-  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Microsoft Yahei" }
 
 a {
   text-decoration: none;
-  font-family:"Hiragino Sans GB", "Microsoft Yahei UI", sans-serif;
+  font-family:"Microsoft Yahei" 
 }
 p{
-  font-family:"Hiragino Sans GB", "Microsoft Yahei UI", sans-serif;;
+  font-family:"Microsoft Yahei" 
 }
 
 
