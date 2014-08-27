@@ -4,11 +4,11 @@ html, body {
   height: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
-  font-family:"Microsoft Yahei" }
+  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif; }
 
 a {
   text-decoration: none;
-  font-family:"Microsoft Yahei" ;
+  font-family:"Hiragino Sans GB", "Microsoft Yahei UI", sans-serif;
 }
 
 .float-right{
@@ -35,8 +35,12 @@ a {
 
 /*头部*/
 #header{
+	height:80%;
 	position:relative;
-	width:100%;
+}
+#random2{
+	position:absolute;
+	height:100%;
 }
 .banner{
 	height:100%;
@@ -45,7 +49,7 @@ a {
 .nav{
 	position:absolute;
 
-	z-index:100;
+	z-index:10;
 	left:25%;
 	top:5%;
 	right:25%;
@@ -61,17 +65,62 @@ a {
 	margin-top:2%;
 	color:#fff;
     float:left;
+    font-weight:bold;
 }
 .nav a:hover{
 	color:#993300;
 }
 
 
+
+.home-icon {
+	float:left;
+	
+    height: 20px;
+    width: 20px;
+	background: url("../images/home-icon.png") no-repeat ;
+}
+
 .city-icon{
 	float:left;
     height: 20px;
     width: 20px;
 	background: url("../images/city-icon.png") no-repeat ;
+}
+
+.search{
+  margin-right:5px;
+
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 70%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none; /* remove the search and cancel icon */
+}
+
+/* search input field */
+input[type=search] {
+  background: #fff url("../images/search.jpg") no-repeat 9px center;
+  padding: 9px 10px 9px 32px;
+  border: solid 1px #fff;
+  width: 70px;
+  height:3px;
+  margin-right:20px;
+
+  
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
 }
 
 
@@ -90,7 +139,7 @@ padding:10px;
 .information1 p{
 	font-size:17px;
 	color:#fff;
-
+    font-weight: bold;
 }
 .information1 a{
     color:#1a0e08;
@@ -116,7 +165,7 @@ padding:10px;
 .information2 p{
 	font-size:17px;
 	color:#fff;
-
+	font-weight: bold;
 
  
 }
@@ -147,7 +196,7 @@ padding:10px;
 .information3 p{
 	font-size:17px;
 	color:#fff;
-
+    font-weight: bold;
 }
 .information3 a{
     color:#352a2c;
@@ -157,73 +206,11 @@ padding:10px;
     background-color:#fff;
 }
 
-/*图片轮播*/
-#slider {
-	position:relative;
-    width:1366px;
-    height:576px;
-    margin:auto;
-	background:url(../images/banner/loading.gif) no-repeat 50% 50%;
-}
-#slider img {
-	position:absolute;
-	top:0px;
-	left:10%;
-	display:none;
-}
-#slider a {
-	border:0;
-	display:block;
-}
-
-.nivo-controlNav {
-	position:absolute;
-	left:640px;
-	bottom:34px;
-}
-.nivo-controlNav a {
-	display:block;
-	width:22px;
-	height:22px;
-	background:url(../images/banner/bullets.png) no-repeat;
-	text-indent:-9999px;
-	border:0;
-	margin-right:3px;
-	float:left;
-}
-.nivo-controlNav a.active {
-	background-position:0 -22px;
-}
-
-.nivo-directionNav a {
-	display:block;
-	width:100px;
-	height:100px;
-	background:url(../images/banner/arrows.png) no-repeat;
-	text-indent:-9999px;
-	border:0;
-}
-a.nivo-nextNav {
-	background-position:-30px 0;
-	right:15px;
-}
-a.nivo-prevNav {
-	left:15px;
-}
-
-.nivo-caption {
-    text-shadow:none;
-    font-family: Helvetica, Arial, sans-serif;
-}
-.nivo-caption a { 
-    color:#efe9d1;
-    text-decoration:underline;
-}
 
 
 /*主体部分*/
 #house{
-	margin-top:10px;
+	margin-top:1%;
 
 	position:relative;
 
@@ -288,6 +275,7 @@ a.nivo-prevNav {
 .ft-top a{
 	color:#fff;
 	font-size:13px;
+	font-weight:bold;
 }
 
 .ft-bottom{
@@ -299,10 +287,12 @@ a.nivo-prevNav {
 	margin-top:10px;
 	color:#fff;
 	font-size:12px;
+	font-weight:bold;
 }
 
 .ft-bottom a{
 	margin-left:10px;
 	color:#fff;
 	font-size:11px;
+	font-weight:bold;
 }

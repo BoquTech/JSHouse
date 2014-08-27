@@ -1,0 +1,46 @@
+
+
+
+/*主体部分*/
+#contact{
+	margin-top:20px;
+	min-height:100%;
+	position:relative;
+}
+.container{
+	font-family:"Microsoft Yahei";
+    width: 720px;
+    padding: 60px 175px 50px 65px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.title{
+	color: #EC462C;
+    font-size: 32px;
+    line-height: 32px;
+
+}
+
+.sub-title{
+	color: #5c5c5c;
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+
+}
+
+.h-line{
+	border-bottom: 1px solid #eaeaea;
+    height: 0px;
+    margin: 20px 0;
+    width: 100%;
+
+}
+
+.text{
+	color: #999999;
+    font-size: 14px;
+    line-height: 20px;
+
+}

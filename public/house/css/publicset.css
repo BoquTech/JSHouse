@@ -3,14 +3,14 @@ html, body {
   height: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
-  font-family: "Microsoft Yahei" }
+  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif; }
 
 a {
   text-decoration: none;
-  font-family:"Microsoft Yahei" 
+  font-family:"Hiragino Sans GB", "Microsoft Yahei UI", sans-serif;
 }
 p{
-  font-family:"Microsoft Yahei" 
+  font-family:"Hiragino Sans GB", "Microsoft Yahei UI", sans-serif;;
 }
 
 
@@ -30,7 +30,7 @@ p{
 .containers{
   width:980px;
   margin:auto;
-  height:100%;
+  min-height:100%;
   position:relative;
 }
 
@@ -76,6 +76,11 @@ p{
   color:#993300;
 
   
+}
+.nav h1{
+  color:#fff;
+  float:right;
+  font-weight:bold;
 }
 .icon {
   float:left;

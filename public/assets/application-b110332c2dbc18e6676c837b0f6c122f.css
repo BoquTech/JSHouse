@@ -1,0 +1,199 @@
+/* line 5, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* line 15, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks table tr th {
+  color: #fff;
+  background-color: #5b6378;
+  padding: 5px;
+  vertical-alogn: top;
+}
+/* line 21, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks table tr td {
+  text-align: center;
+  padding: 5px;
+  vertical-alogn: top;
+}
+/* line 26, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .message {
+  text-align: left;
+}
+/* line 29, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .list_description {
+  width: 60%;
+}
+/* line 32, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .list_description dl {
+  margin: 0;
+}
+/* line 35, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .list_description dt {
+  color: #244;
+  font-weight: bold;
+  font-size: larger;
+}
+/* line 40, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .list_description dd {
+  margin: 0;
+}
+/* line 44, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .list_action1 {
+  font-size: x-middle;
+  text-align: right;
+  padding-left: 1em;
+}
+/* line 49, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .list_action2 {
+  font-size: x-middle;
+  text-align: left;
+  padding-left: 1em;
+}
+/* line 54, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .list_line_even {
+  background: #e0f8f8;
+}
+/* line 57, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .list_line_odd {
+  background: #f8b0f8;
+}
+/* line 1, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 23, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 26, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 33, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 39, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+#feedback_name, #feedback_phone, #feedback_email {
+  width: 245px;
+  height: 25px;
+  font-size: 15px;
+  margin-left: 5px;
+  border: 1px solid #A4A4A4;
+}
+
+/* line 46, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+#feedback_message {
+  width: 245px;
+  height: 70px;
+  font-size: 15px;
+  margin-left: 5px;
+  border: 1px solid #A4A4A4;
+}
+
+/* line 54, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+input[type="submit"] {
+  display: block;
+  height: 35px;
+  width: 249px;
+  color: #fff;
+  background-color: #e90000;
+  border: 1px solid #e90000;
+  margin-left: 5px;
+  font-size: 15px;
+  border-radius: 2px;
+}
+
+/* line 65, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+input[type="submit"]:hover {
+  background-color: #ff0000;
+}
+
+/* line 69, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 73, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 79, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  display: none;
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 87, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 97, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
