@@ -3,14 +3,14 @@ html, body {
   height: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
-  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Microsoft Yahei" }
 
 a {
   text-decoration: none;
-  font-family:"Hiragino Sans GB", "Microsoft Yahei UI", sans-serif;
+  font-family:"Microsoft Yahei" 
 }
 p{
-  font-family:"Hiragino Sans GB", "Microsoft Yahei UI", sans-serif;;
+  font-family:"Microsoft Yahei" 
 }
 
 
@@ -81,7 +81,7 @@ p{
   float:left;
     height: 50px;
     width: 120px;
-  background: url("../images/icon.jpg") no-repeat ;
+  background: url("http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/icon1.png") no-repeat ;
   margin-left:16%;
   margin-top:8px;
 }
