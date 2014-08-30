@@ -3,14 +3,14 @@ html, body {
   height: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
-  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Microsoft Yahei";}
 
 a {
   text-decoration: none;
-  font-family:"Hiragino Sans GB", "Microsoft Yahei UI", sans-serif;
+  font-family:"Microsoft Yahei";
 }
 p{
-  font-family:"Hiragino Sans GB", "Microsoft Yahei UI", sans-serif;;
+  font-family:"Microsoft Yahei";
 }
 
 
@@ -228,3 +228,19 @@ input[type=search] {
   font-size:11px;
   font-weight:bold;
 }
+
+/*返回顶部*/
+
+#back-to-top{
+  display:none;
+  position:fixed;
+  top:75%;
+  left:50%;
+  cursor:pointer;
+  margin-top:-50px;
+  margin-left:520px;
+  width:40px;
+  height:40px;
+  background:url(../images/top.png) no-repeat ;
+}
+

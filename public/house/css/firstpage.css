@@ -42,6 +42,7 @@ a {
 	position:absolute;
 	height:100%;
 }
+
 .banner{
 	height:100%;
 
@@ -142,11 +143,19 @@ padding:10px;
     font-weight: bold;
 }
 .information1 a{
-    color:#1a0e08;
+    color:#fff;
+    font-weight: bold;
     padding:10px;
     font-size:15px;
-    margin-left:80%;
-    background-color:#fff;
+    border:3px solid #fff;
+}
+.information1 a:hover{
+    font-weight: bold;
+    padding:10px;
+    font-size:15px;
+    color:#ec462c;
+    background-color: #fff;
+    border:2px solid #fff;
 }
 
 .information2{
@@ -169,23 +178,30 @@ padding:10px;
 
  
 }
+
 .information2 a{
-    color:#352a2c;
+    color:#fff;
+    font-weight: bold;
     padding:10px;
     font-size:15px;
-    margin-left:80%;
-    background-color:#fff;
+    border:3px solid #fff;
 }
-
+.information2 a:hover{
+    font-weight: bold;
+    padding:10px;
+    font-size:15px;
+    color:#ec462c;
+    background-color: #fff;
+    border:2px solid #fff;
+}
 
 .information3{
 background-color: #000;
 opacity: 0.7;
 margin-left:50%;
 margin-top:10%;
-
-width:40%;
 padding:10px;
+width:40%;
 }
 .information3 h1{
 	color:#fff;
@@ -199,11 +215,19 @@ padding:10px;
     font-weight: bold;
 }
 .information3 a{
-    color:#352a2c;
+    color:#fff;
+    font-weight: bold;
     padding:10px;
     font-size:15px;
-    margin-left:80%;
-    background-color:#fff;
+    border:3px solid #fff;
+}
+.information3 a:hover{
+    font-weight: bold;
+    padding:10px;
+    font-size:15px;
+    color:#ec462c;
+    background-color: #fff;
+    border:2px solid #fff;
 }
 
 
