@@ -234,7 +234,7 @@ input[type=search] {
 #back-to-top{
   display:none;
   position:fixed;
-  top:75%;
+  top:80%;
   left:50%;
   cursor:pointer;
   margin-top:-50px;

@@ -1,6 +1,8 @@
 html{
     color:#000;
     background:#FFF;
+    margin:0;
+    padding:0;
 }
 article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
 

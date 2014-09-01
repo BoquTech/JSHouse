@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140813012435) do
+ActiveRecord::Schema.define(version: 20140901074018) do
 
   create_table "addresses", force: true do |t|
     t.string   "country"
@@ -53,5 +53,12 @@ ActiveRecord::Schema.define(version: 20140813012435) do
   end
 
   add_index "pictures", ["house_id"], name: "index_pictures_on_house_id", using: :btree
+
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "password_digest"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
