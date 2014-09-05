@@ -1,0 +1,93 @@
+<h1>Listing properties</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Address</th>
+      <th>Bedrooms</th>
+      <th>Bathrooms</th>
+      <th>Family rooms</th>
+      <th>Reception rooms</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Features</th>
+      <th>Agent</th>
+      <th>Agent name</th>
+      <th>Date available</th>
+      <th>Building name</th>
+      <th>District</th>
+      <th>Indoor size</th>
+      <th>Saleable area</th>
+      <th>Buy</th>
+      <th>Rent</th>
+      <th>Refid</th>
+      <th>Building age</th>
+      <th>Outdoor size</th>
+      <th>Float</th>
+      <th>Inclusive display</th>
+      <th>Inclusive mfee</th>
+      <th>Inclusive govr</th>
+      <th>Address display</th>
+      <th>Street</th>
+      <th>View</th>
+      <th>Layout</th>
+      <th>Floor</th>
+      <th>Uuid</th>
+      <th>User</th>
+      <th>Data source</th>
+      <th>Enabled</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @properties.each do |property| %>
+      <tr>
+        <td><%= property.title %></td>
+        <td><%= property.description %></td>
+        <td><%= property.address %></td>
+        <td><%= property.bedrooms %></td>
+        <td><%= property.bathrooms %></td>
+        <td><%= property.family_rooms %></td>
+        <td><%= property.reception_rooms %></td>
+        <td><%= property.latitude %></td>
+        <td><%= property.longitude %></td>
+        <td><%= property.features %></td>
+        <td><%= property.agent_id %></td>
+        <td><%= property.agent_name %></td>
+        <td><%= property.date_available %></td>
+        <td><%= property.building_name %></td>
+        <td><%= property.district %></td>
+        <td><%= property.indoor_size %></td>
+        <td><%= property.saleable_area %></td>
+        <td><%= property.buy %></td>
+        <td><%= property.rent %></td>
+        <td><%= property.refid %></td>
+        <td><%= property.building_age %></td>
+        <td><%= property.outdoor_size %></td>
+        <td><%= property.float %></td>
+        <td><%= property.inclusive_display %></td>
+        <td><%= property.inclusive_mfee %></td>
+        <td><%= property.inclusive_govr %></td>
+        <td><%= property.address_display %></td>
+        <td><%= property.street %></td>
+        <td><%= property.view %></td>
+        <td><%= property.layout %></td>
+        <td><%= property.floor %></td>
+        <td><%= property.uuid %></td>
+        <td><%= property.user_id %></td>
+        <td><%= property.data_source %></td>
+        <td><%= property.enabled %></td>
+        <td><%= link_to 'Show', property %></td>
+        <td><%= link_to 'Edit', edit_property_path(property) %></td>
+        <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Property', new_property_path %>

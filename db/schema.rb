@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140901074018) do
+ActiveRecord::Schema.define(version: 20140904085716) do
 
   create_table "addresses", force: true do |t|
     t.string   "country"
@@ -28,6 +28,10 @@ ActiveRecord::Schema.define(version: 20140901074018) do
     t.text     "message"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "note"
+    t.string   "status"
+    t.string   "manager"
+    t.string   "ip"
   end
 
   create_table "houses", force: true do |t|
@@ -53,6 +57,65 @@ ActiveRecord::Schema.define(version: 20140901074018) do
   end
 
   add_index "pictures", ["house_id"], name: "index_pictures_on_house_id", using: :btree
+
+  create_table "properties", force: true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "address"
+    t.integer  "bedrooms"
+    t.integer  "bathrooms"
+    t.integer  "family_rooms"
+    t.integer  "reception_rooms"
+    t.float    "latitude",          limit: 24
+    t.float    "longitude",         limit: 24
+    t.text     "features"
+    t.string   "agent_id"
+    t.string   "agent_name"
+    t.datetime "date_available"
+    t.string   "building_name"
+    t.string   "district"
+    t.float    "indoor_size",       limit: 24
+    t.float    "saleable_area",     limit: 24
+    t.float    "buy",               limit: 24
+    t.float    "rent",              limit: 24
+    t.string   "refid"
+    t.float    "building_age",      limit: 24
+    t.string   "outdoor_size"
+    t.string   "float"
+    t.boolean  "inclusive_display"
+    t.string   "inclusive_mfee"
+    t.string   "inclusive_govr"
+    t.boolean  "address_display"
+    t.string   "street"
+    t.string   "view"
+    t.string   "layout"
+    t.string   "floor"
+    t.string   "uuid"
+    t.integer  "user_id"
+    t.string   "data_source"
+    t.boolean  "enabled"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "taggings", force: true do |t|
+    t.integer  "tag_id"
+    t.integer  "taggable_id"
+    t.string   "taggable_type"
+    t.integer  "tagger_id"
+    t.string   "tagger_type"
+    t.string   "context",       limit: 128
+    t.datetime "created_at"
+  end
+
+  add_index "taggings", ["tag_id", "taggable_id", "taggable_type", "context", "tagger_id", "tagger_type"], name: "taggings_idx", unique: true, using: :btree
+
+  create_table "tags", force: true do |t|
+    t.string  "name"
+    t.integer "taggings_count", default: 0
+  end
+
+  add_index "tags", ["name"], name: "index_tags_on_name", unique: true, using: :btree
 
   create_table "users", force: true do |t|
     t.string   "name"

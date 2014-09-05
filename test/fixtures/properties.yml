@@ -1,0 +1,75 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  address: MyString
+  bedrooms: 1
+  bathrooms: 1
+  family_rooms: 1
+  reception_rooms: 1
+  latitude: 1.5
+  longitude: 1.5
+  features: MyText
+  agent_id: MyString
+  agent_name: MyString
+  date_available: 2014-09-04 15:54:26
+  building_name: MyString
+  district: MyString
+  indoor_size: 1.5
+  saleable_area: 1.5
+  buy: 1.5
+  rent: 1.5
+  refid: MyString
+  building_age: 1.5
+  outdoor_size: MyString
+  float: MyString
+  inclusive_display: false
+  inclusive_mfee: MyString
+  inclusive_govr: MyString
+  address_display: false
+  street: MyString
+  view: MyString
+  layout: MyString
+  floor: MyString
+  uuid: MyString
+  user_id: 1
+  data_source: MyString
+  enabled: false
+
+two:
+  title: MyString
+  description: MyText
+  address: MyString
+  bedrooms: 1
+  bathrooms: 1
+  family_rooms: 1
+  reception_rooms: 1
+  latitude: 1.5
+  longitude: 1.5
+  features: MyText
+  agent_id: MyString
+  agent_name: MyString
+  date_available: 2014-09-04 15:54:26
+  building_name: MyString
+  district: MyString
+  indoor_size: 1.5
+  saleable_area: 1.5
+  buy: 1.5
+  rent: 1.5
+  refid: MyString
+  building_age: 1.5
+  outdoor_size: MyString
+  float: MyString
+  inclusive_display: false
+  inclusive_mfee: MyString
+  inclusive_govr: MyString
+  address_display: false
+  street: MyString
+  view: MyString
+  layout: MyString
+  floor: MyString
+  uuid: MyString
+  user_id: 1
+  data_source: MyString
+  enabled: false
