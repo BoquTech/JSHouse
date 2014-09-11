@@ -1,4 +1,5 @@
 class PropertiesController < ApplicationController
+  layout "property",only:[:show]
   skip_before_action :authorize
   before_action :set_property, only: [:show, :edit, :update, :destroy]
 

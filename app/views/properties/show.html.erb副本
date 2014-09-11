@@ -155,25 +155,3 @@
   <%= @property.floor %>
 </p>
 
-<p>
-  <strong>Uuid:</strong>
-  <%= @property.uuid %>
-</p>
-
-<p>
-  <strong>User:</strong>
-  <%= @property.user_id %>
-</p>
-
-<p>
-  <strong>Data source:</strong>
-  <%= @property.data_source %>
-</p>
-
-<p>
-  <strong>Enabled:</strong>
-  <%= @property.enabled %>
-</p>
-
-<%= link_to 'Edit', edit_property_path(@property) %> |
-<%= link_to 'Back', properties_path %>
