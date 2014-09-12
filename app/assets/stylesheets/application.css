@@ -12,12 +12,19 @@
  *
  *= require_tree .
  *= require_self
+ *= 
  */
 html{
     color:#000;
     background:#FFF;
     margin:0;
     padding:0;
+    height: 100%;
+    width: 100%;
+}
+body{
+    height:100%;
+    width:100%;
 }
 article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
 

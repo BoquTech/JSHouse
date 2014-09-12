@@ -1,0 +1,100 @@
+<div id="header">
+	<a class="icon"></a>
+	<div class="nav">
+		<a href="../index.html">
+			<div class="home-icon"></div>
+			首页
+		</a>
+		<a href="../house/citypage.html">
+			<div class="city-icon"></div>
+			城市
+		</a>
+		<h1>咨询热线：147-1433-5039</h1>
+	</div>
+</div>
+
+<!--导航部分-->
+<div id="tabs">
+	<ul>
+		<li>
+			<a href="../house/melbournelist.html">
+				<h1><%= @property.city %></h1>
+			</a>
+
+		</li>
+	</ul>
+</div>
+
+<div class="clear"></div>
+
+
+
+<div id="bd">
+  <div class="containers">
+    <div class="core">
+
+      <div class="abstract">
+        <h1>
+          <%=@property.title %>
+        </h1>
+        <div>
+          <ul>
+            <li>
+              房型:
+              <span class="kind"><%= @property.bedrooms%>卧<%= @property.bathrooms%>卫<%= @property.reception_rooms%>厅</span>
+            </li>
+            <li>
+              位置：
+              <span class="position"><%= @property.address %></span>
+              <a class="chack" href="#pro-map">查看地图</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <div class="clear"> </div>
+      <div class="gallery">
+        <div id="slider" class="nivoSlider">
+          <img src="http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/hub/image1.png" alt=""/>
+          <img src="http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/hub/image2.png" alt="" />
+          <img src="http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/hub/image3.png" alt="" />
+          <img src="http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/hub/image4.png" alt="" />
+          <img src="http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/hub/image5.png" alt="" />
+          <img src="http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/hub/image6.png" alt="" />
+          <img src="http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/hub/image7.png" alt="" />
+          <img src="http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/hub/image8.png" alt="" />
+          <img src="http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/hub/image9.png" alt="" />
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+<!--尾部-->
+<div id="footer">
+  <div class="containers">
+    <div class="ft-top">
+      <ul>
+        <li><a href="../house/m/about.html">关于</a></li>
+        <li><a href="../house/m/contact.html">联系我们</a></li>
+        <li><%=link_to "后台登录", login_path(@login)%></li>
+        <li><a href="http://tongji.baidu.com/web/welcome/ico?s=b7fbf908911ab72bbed3f31577ba9fd7" target="_blank">百度统计</a></li>
+      </ul>
+      <br/>
+    </div>
+    <div class="ft-bottom">
+      <h1>合作伙伴</h1>
+      <p>
+        <a href="http://jsfund.cn">嘉实基金</a>
+        <a href="http://www.colliersresidential.com/">高力国际</a>
+        <a href="http://www.hrei.com.hk/en/index.html">HREI</a>
+      </p>
+    </div>
+  </div>
+</div>
+<%=javascript_include_tag "jquery-1.4.3.min"%>
+<%=javascript_include_tag "jquery.nivo.slider.pack"%>
+
