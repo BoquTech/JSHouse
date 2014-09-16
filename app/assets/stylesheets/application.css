@@ -12,7 +12,6 @@
  *
  *= require_tree .
  *= require_self
- *= 
  */
 html{
     color:#000;
@@ -81,12 +80,33 @@ input,textarea,select{
     font-family:inherit;
     font-size:inherit;
     font-weight:inherit;
-    *font-size:100%;
+    font-size:100%;
 }
 
 legend{
     color:#000;
 }
 
+
+
+#back-to-top{
+  display:none;
+  position:fixed;
+  top:80%;
+  left:50%;
+  cursor:pointer;
+  margin-top:-50px;
+  margin-left:520px;
+  width:40px;
+  height:40px;
+  background:url(../house/images/top.png) no-repeat ;
+}
+
+.containers{
+  width:980px;
+  margin:auto;
+  min-height:100%;
+  position:relative;
+}
 
 
