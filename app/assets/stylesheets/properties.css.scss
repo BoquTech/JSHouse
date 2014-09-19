@@ -5,62 +5,7 @@
 
 .properties{
 
-.clear{
-  font:0px/0px sans-serif;
-  clear:both;
-  display:block;
 
-}
-
-#header{
-	height:60px;
-	background:#ec462c;
-	.icon{
-	    float:left;
-	    height:50px;
-	    width:120px;
-	    background:url("http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/icon1.png") no-repeat ;
-	    margin-left:16%;
-	    margin-top:8px;
-	}
-	.nav{
-	    width:960px; 
-        position:relative;
-        margin:auto;
-        padding-top:20px;
-	    
-
-	    a{
-	        font-size:16px;
-	        margin-right:40px;
-	        color:#fff;
-	        float:left;
-	        font-weight:bold;
-	    }
-
-	    a:hover{
-	         color:#993300;
-	    }
-
-	    h1{
-	        color:#fff;
-	        float:right;
-	        font-weight:bold;
-	    }
-	    .home-icon{
-	        float:left;
-	        height:20px;
-	        width:20px;
-	        background:url("../house/images/home-icon.png") no-repeat;
-	    }
-	    .city-icon{
-	        float:left;
-	        height:20px;
-	        width:20px;
-	        background:url("../house/images/city-icon.png") no-repeat;
-	    }
-	}
-}
 
 
 #tabs{
@@ -79,6 +24,9 @@
         text-decoration: none;
 
     }
+    a:hover{
+       background-color:#fff;
+    }
 
     li{
         float:left;
@@ -95,10 +43,12 @@
 
 
 #bd{
+    margin-top:10px;
 	position:relative;
 
 
 	.core{
+
 	    float:left;
         width: 680px;
         position:relative;
@@ -207,7 +157,10 @@
                     text-indent:-9999px;
                     border:0;
 
-                    .nivo-nextNav{
+                   
+
+                }
+                 .nivo-nextNav{
                         background-position:-30px 0;
                         right:15px;
                     }
@@ -215,8 +168,6 @@
                     .nivo-prevNav{
                         left:15px;
                     }
-
-                }
             }
 
 
@@ -265,20 +216,25 @@
 	        text-align:center;
 	        
 	        .tab-item1{
+                height:31px;
 	            background-color:#ec462c;
 	            font-family:"Microsoft Yahei";
 	            color:#fff;
 	            display:block;
 	            position:relative;
 	            font-weight:bold;
+                padding-top: 10px;
+
 	        }
 
 	         .tab-item2{
+                height:31px;
 	            background-color:#fff;
 	            font-family:"Microsoft Yahei";
 	            color:#ec462c;
 	            display:block;
 	            position:relative;
+                padding-top: 10px;
 	        }
 	        
 	    }	   
@@ -301,6 +257,7 @@
         margin-top:30px;
         width:auto;
         border-bottom:1px solid #f8f8f8;
+        padding-bottom:20px;
     }
 
     .introduce{
@@ -327,53 +284,18 @@
         }
 
 }
+/*用户信息反馈*/
+    #feedback{
+        float: right;
+        width: 280px;
+        margin-top:10px;
+        
+    
+    } 
 	
 }
 }
 
 
-#footer{
-	background:#ec462c;
-    position: relative;
-    .ft-top{
-        margin-top:20px;
-        padding-top:10px;
-        height:100%;
-        padding-bottom:10px;
 
-        ul{
-            float:right;
-        }
-        li{
-            color:#fff;
-            margin-left:10px;
-            float:right;
-        }
-        a{
-            font-weight:bold;
-            color:#fff;
-            font-size:13px;
-        }
-    }
-
-    .ft-bottom{
-        border-top:1px solid #fff;
-        padding-bottom:20px;
-
-        h1{
-            margin-top:10px;
-            color:#fff;
-            font-size:12px;
-            font-weight:bold;
-        }
-
-        a{
-            margin-left:10px;
-            color:#fff;
-            font-size:11px;
-            font-weight:bold;
-        }
-    }
-
-}
 }
