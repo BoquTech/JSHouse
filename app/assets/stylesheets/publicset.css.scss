@@ -1,0 +1,106 @@
+// Place all the styles related to the Feedbacks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*通用*/
+html, body {
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Microsoft Yahei";}
+
+a {
+  text-decoration: none;
+  font-family:"Microsoft Yahei";
+}
+p{
+  font-family:"Microsoft Yahei";
+}
+
+
+
+.fl,
+.float-right{
+  float:right;
+}
+
+
+
+.fr,
+.float-left{
+  float:left;
+}
+
+.containers{
+  width:980px;
+  margin:auto;
+  min-height:100%;
+  position:relative;
+}
+
+.pr
+.position-relative {
+    position: relative;
+}
+
+.clear{
+  font:0px/0px sans-serif;
+  clear:both;
+  display:block;
+
+}
+
+/*主体*/
+
+.publicset{
+
+#header{
+	height:60px;
+	background:#ec462c;
+	.icon{
+	    float:left;
+	    height:50px;
+	    width:120px;
+	    background:url("http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/icon1.png") no-repeat ;
+	    margin-left:16px;
+	    margin-top:8px;
+	}
+	.nav{
+	    width:960px;
+	    position:relative;
+	    margin:auto;
+	    padding-top:20px;
+
+	    a{
+	        font-size:16px;
+	        margin-right:40px;
+	        color:#fff;
+	        float:left;
+	        font-weight:bold;
+	    }
+	    a:hover{
+	        color:#993300;
+	    }
+	    h1{
+	        color:#fff;
+	        float:right;
+	        font-weight:bold;
+	    }
+	    .home-icon{
+	        float:left;
+	        height:20px;
+	        width:20px;
+	        background:url("../house/images/home-icon.png") no-repeat;
+	    }
+	    .city-icon{
+	        float:left;
+	        height:20px;
+	        width:20px;
+	        background:url("../house/images/city-icon.png") no-repeat;
+	    }
+	}
+
+
+}
+
+}
