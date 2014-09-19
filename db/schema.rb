@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140911021039) do
+ActiveRecord::Schema.define(version: 20140918051019) do
 
   create_table "addresses", force: true do |t|
     t.string   "country"
@@ -48,6 +48,16 @@ ActiveRecord::Schema.define(version: 20140911021039) do
   end
 
   add_index "houses", ["address_id"], name: "index_houses_on_address_id", using: :btree
+
+  create_table "item_images", force: true do |t|
+    t.string   "refid"
+    t.string   "image_url"
+    t.integer  "property_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "item_images", ["property_id"], name: "index_item_images_on_property_id", using: :btree
 
   create_table "pictures", force: true do |t|
     t.integer  "house_id"

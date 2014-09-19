@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :properties
+  resources :properties do
+    resources :item_images
+  end
+
 
   get 'admin/index'
   controller :sessions do
