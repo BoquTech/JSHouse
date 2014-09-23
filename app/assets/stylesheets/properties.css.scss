@@ -1,166 +1,158 @@
-// Place all the styles related to the Properties controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
 
 
 .properties{
 
-
-
-
-#tabs{
-	width:960px;
-    margin:auto;
-    border-bottom: 1px solid #e7e7e7;
-    height: 68px;
-    line-height: 68px;
-
-    a{
-        color:#5c5c5c;
-        display: block;
-        height: 63px;
-        font-size: 24px;
+    #tabs{
+        width:960px;
+        margin:auto;
+        border-bottom: 1px solid #e7e7e7;
+        height: 68px;
         line-height: 68px;
-        text-decoration: none;
 
-    }
-    a:hover{
-       background-color:#fff;
-    }
+        a{
+            color:#5c5c5c;
+            display: block;
+            height: 63px;
+            font-size: 24px;
+            line-height: 68px;
+            text-decoration: none;
 
-    li{
-        float:left;
-    }
-
-    .nav-line{
-        background: #e7e7e7;
-        display: block;
-        height: 28px;
-        margin: 20px 13px 0 13px;
-        width: 1px;
-    }
-}
-
-
-#bd{
-    margin-top:10px;
-	position:relative;
-
-
-	.core{
-
-	    float:left;
-        width: 680px;
-        position:relative;
-	}
-    .abstract{
-        position:relative;
-
-        h1{
-            float:left;
-            width:100%;
-            margin-bottom:16px;
-            font-weight:bold;
-            font-size:26px;
-            color:#ec462c;
-            line-height:30px;
-
-            small{
-                display:block;
-                font-size:15px;
-                font-weight:normal;
-                color:#818080;
-                line-height:24px;
-            }
         }
-        
+
+        a:hover{
+            background-color:#fff;
+        }
+
         li{
-            margin-bottom:10px;
+            float:left;
         }
 
-        .kind{
-            margin-right:10px;
+        .nav-line{
+            background: #e7e7e7;
+            display: block;
+            height: 28px;
+            margin: 20px 13px 0 13px;
+            width: 1px;
         }
 
-        .price{
-            width:35%;
-            position:relative;
-            float:right;
-            margin-top:6%;
-            color:#ec462c;
-            font-size:30px;
-        }
-
-        .chack{
-            background-color:#ec462c;
-            color:#fff;
-            padding:2px;
-            font-size:13px;
-            font-weight:bold;
-        }
 
     }
-    .gallery{
-        width:680px;
-        height:500px;
-        margin-top:20px;
-        position:relative;
-        font-family:"Microsoft Yahei";
-        background:#f8f8f8;
 
-        #slider{
+
+    #bd{
+        margin-top:10px;
+	    position:relative;
+	    .core{
+	        float:left;
+            width: 680px;
             position:relative;
-            width:680px;
-            height:500px;
-            background:url(../house/images/slider/loading.gif) no-repeat 50% 50%;
-
-            img{
-                position:absolute;
-                top:0px;
-                left:0px;
-                display:none;
-            }
-
-            a{
-                border:0;
-                display:block;
-            }
-
-            .nivo-controlNav{
-                position:absolute;
-                left:220px;
-                bottom:20px;
-
-                a{
-                    display:block;
-                    width:22px;
-                    height:22px;
-                    background:url(../house/images/slider/bullets.png)no-repeat;
-                    text-indent:-9999px;
-                    border:0;
-                    margin-right:3px;
+	
+            .abstract{
+                position:relative;
+                h1{
                     float:left;
+                    width:100%;
+                    margin-bottom:16px;
+                    font-weight:bold;
+                    font-size:26px;
+                    color:#ec462c;
+                    line-height:30px;
 
-                    .active{
-                        background-position:0 -22px;
+                    small{
+                        display:block;
+                        font-size:15px;
+                        font-weight:normal;
+                        color:#818080;
+                        line-height:24px;
                     }
-
                 }
+        
+                li{
+                    margin-bottom:10px;
+                }
+
+                .kind{
+                    margin-right:10px;
+                }
+  
+                .price{
+                    width:35%;
+                    position:relative;
+                    float:right;
+                    margin-top:6%;
+                    color:#ec462c;
+                    font-size:30px;
+                }
+
+                .chack{
+                    background-color:#ec462c;
+                    color:#fff;
+                    padding:2px;
+                    font-size:13px;
+                    font-weight:bold;
+                } 
+
             }
+            .gallery{
+                width:680px;
+                height:500px;
+                margin-top:20px;
+                position:relative;
+                font-family:"Microsoft Yahei";
+                background:#f8f8f8;
 
-            .nivo-directionNav{
-                a{
-                    display:block;
-                    width:30px;
-                    height:30px;
-                    background:url(../house/images/slider/arrows.png)no-repeat;
-                    text-indent:-9999px;
-                    border:0;
+                #slider{
+                    position:relative;
+                    width:680px;
+                    height:500px;
+                    background:url(../house/images/slider/loading.gif) no-repeat 50% 50%;
 
-                   
+                img{
+                    position:absolute;
+                    top:0px;
+                    left:0px;
+                    
+                    display:none;
 
                 }
-                 .nivo-nextNav{
+
+                a{
+                    border:0;
+                    display:block;
+                }
+
+                .nivo-controlNav{
+                    position:absolute;
+                    left:220px;
+                    bottom:20px;
+
+                    a{
+                        display:block;
+                        width:22px;
+                        height:22px;
+                        background:url(../house/images/slider/bullets.png)no-repeat;
+                        text-indent:-9999px;
+                        border:0;
+                        margin-right:3px;
+                        float:left;
+
+                        .active{
+                            background-position:0 -22px;
+                        }
+                    }
+                }
+
+                .nivo-directionNav{
+                    a{
+                        display:block;
+                        width:30px;
+                        height:30px;
+                        background:url(../house/images/slider/arrows.png)no-repeat;
+                        text-indent:-9999px;
+                        border:0;
+                    }
+                    .nivo-nextNav{
                         background-position:-30px 0;
                         right:15px;
                     }
@@ -168,134 +160,175 @@
                     .nivo-prevNav{
                         left:15px;
                     }
-            }
+                }
+                .nivo-caption{
+                    text-shadow:none;
+                    font-family:"Microsoft Yahei";
 
-
-            .nivo-caption{
-                text-shadow:none;
-                font-family:"Microsoft Yahei";
-
-                a{
-                    color:#efe9d1;
-                    text-decoration:underline;
+                    a{
+                        color:#efe9d1;
+                        text-decoration:underline;
+                    }
                 }
             }
-        }
-    }   
+        }  
 
 
 /*固定栏*/
 
-.fix1{
-	    position:fixed;
-	    top:0px;
-	    width:680px;
-	    z-index:100;
-	}
+            .fix1{
+	            position:fixed;
+	            top:0px;
+	            width:680px;
+	            z-index:100;
+	        } 
 
-.fix2{
-	    width:680px;
-	    position:relative;
-	    margin-top:20px;
-	}
-
-#fix{
-	
-
-	.flat-content-navbar{
-	    position:relative;
-	    box-shadow:inset 0 0 0 1px #f8f8f8;
-	    border:1px solid #f8f8f8;
-	    height:41px;
-	    line-height:41px;
-	    background-color:#fff;
-	    width:680px;
-	    li{
-	        float:left;
-	        width:130px;
-	        text-align:center;
-	        
-	        .tab-item1{
-                height:31px;
-	            background-color:#ec462c;
-	            font-family:"Microsoft Yahei";
-	            color:#fff;
-	            display:block;
+            .fix2{
+	            width:680px;
 	            position:relative;
-	            font-weight:bold;
-                padding-top: 10px;
-
+	            margin-top:20px;
 	        }
 
-	         .tab-item2{
-                height:31px;
-	            background-color:#fff;
-	            font-family:"Microsoft Yahei";
-	            color:#ec462c;
-	            display:block;
-	            position:relative;
-                padding-top: 10px;
-	        }
+            #fix{
+	           .flat-content-navbar{
+	                position:relative;
+	                box-shadow:inset 0 0 0 1px #f8f8f8;
+	                border:1px solid #f8f8f8;
+	                height:41px;
+	                line-height:41px;
+	                background-color:#fff;
+	                width:680px;
+	                li{
+	                    float:left;
+	                    width:130px;
+	                    text-align:center;
 	        
-	    }	   
-	}
+	                    .tab-item1{
+	                        background-color:#ec462c;
+	                        font-family:"Microsoft Yahei";
+	                        color:#fff;
+	                        display:block;
+	                        position:relative;
+	                        font-weight:bold;
 
+	                    }
 
-}
+	                    .tab-item2{
+	                        background-color:#fff;
+	                        font-family:"Microsoft Yahei";
+	                        color:#ec462c;
+	                        display:block;
+	                        position:relative;
+	                    }
+	        	    }	   
+	            }
+            }
 
 
 /*详细信息*/
 
-#deal-stuff{
-    margin-top:20px;
-    width:680px;
-    position:relative;
+            #deal-stuff{
+                margin-top:20px;
+                width:680px;
+                position:relative;
 
-    h1{
-        font-size: 25px;
-        color:#ec462c;
-        margin-top:30px;
-        width:auto;
-        border-bottom:1px solid #f8f8f8;
-        padding-bottom:20px;
-    }
+                h1{
+                    font-size: 25px;
+                    color:#ec462c;
+                    margin-top:30px;
+                    width:auto;
+                    border-bottom:1px solid #f8f8f8;
+                    padding-bottom:20px;
+                }
 
-    .introduce{
-        p{
-            margin: 21px 0;
-            color: #000;
-            font-size:15px;
+                .introduce{
+                   p{
+                        margin: 21px 0;
+                        color: #000;
+                        font-size:15px;
+                    }
+                    li{
+                        margin:10px;
+                    }
+                }
+
+                .map{
+                    position:relative;
+                    padding:0px;
+                    margin-top:20px;
+                    height:650px;
+                    .google{
+                        margin-top:20px;
+                        background-color: #f8f8f8;
+                        position:absolute;
+                        padding:20px;        
+                    }
+                }
+            } 
         }
-        li{
-             margin:10px;
-        }
-    }
-
-    .map{
-        position:relative;
-        padding:0px;
-        margin-top:20px;
-        height:650px;
-         .google{
-            margin-top:20px;
-            background-color: #f8f8f8;
-            position:absolute;
-            padding:20px;        
-        }
-
-}
 /*用户信息反馈*/
-    #feedback{
-        float: right;
-        width: 280px;
-        margin-top:10px;
-        
-    
-    } 
-	
-}
-}
+        .feedback{
+            float: right;
+            width: 280px;
+            margin-top:10px;
+            .information{
+                h3{
+                    padding-left: 10px;
+                    border-bottom: 1px solid #f8f8f8;
+                    border-left: 3px solid #ec462c;
+                    font-size: 15px;
+                    color: #000;
+                    line-height: 26px;
+                }
+                .wrap{
+                    padding: 20px 10px;
+                    margin: 20px 0;
+                    background: #f8f8f8;
+                    
 
+                    .field,.actions {
+                        margin-bottom: 10px;
+                    }
 
+                    #feedback_name,#feedback_phone,#feedback_email{
+                        width: 245px;
+                        height: 25px;
+                        font-size:15px;
+                        margin-left:5px;
+                        border:1px solid #A4A4A4;
+                    }
+                    #feedback_message{
+                        width:245px;
+                        height:70px;
+                        font-size:15px;
+                        margin-left:5px;
+                        border:1px solid #A4A4A4;
+                    }
 
+                    input[type="submit"]{
+                        display:block;
+                        height:35px;
+                        width:249px;
+                        color:#fff;
+                        background-color:#e90000;
+                        border:1px solid #e90000;
+                        margin-left:5px;
+                        font-size:15px;
+                        border-radius:2px;
+                    }
+                    input[type="submit"]:hover{
+                        display:block;
+                        height:35px;
+                        width:249px;
+                        color:#fff;
+                        background-color:#ff0000;
+                        border:1px solid #ff0000;
+                        margin-left:5px;
+                        font-size:15px;
+                        border-radius:2px;
+                    }
+                }
+            }
+        } 
+	}
 }

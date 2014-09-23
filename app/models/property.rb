@@ -8,6 +8,8 @@ class Property < ActiveRecord::Base
 
   before_create :set_uuid
   has_many :item_images 
+  has_many :feedbacks
+  
 
   accepts_nested_attributes_for :item_images, allow_destroy: true
   def set_uuid

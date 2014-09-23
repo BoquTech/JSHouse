@@ -1,6 +1,7 @@
 <table>
   <thead>
     <tr>
+       <th>房产编号</th>
       <th>姓名</th>
       <th>电话号码</th>
       <th>电子邮件</th>
@@ -15,6 +16,7 @@
   <tbody>
     <% @feedbacks.each do |feedback| %>
       <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+        <td><%= feedback.property_id %></td>
         <td><%= feedback.name %></td>
         <td><%= feedback.phone %></td>
         <td><%= feedback.email %></td>

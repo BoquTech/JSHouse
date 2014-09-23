@@ -12,6 +12,8 @@ class PropertiesController < ApplicationController
   # GET /properties/1
   # GET /properties/1.json
   def show
+   @code=@property.description
+
   end
 
   # GET /properties/new

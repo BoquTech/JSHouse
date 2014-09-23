@@ -2,10 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body{
-    margin:0;
-    padding:0;
-}
 
 .feedbacks{
 	table{
@@ -23,15 +19,8 @@ body{
 	padding:5px;
 	vertical-alogn:top;
 	}
-
-	.note1{
-	width:25%;
-	}
-	.note2{
+	.message{
 	text-align:left;
-	display:block;
-	width:100%;
-
 	}
 	.list_description{
 	width:60%;

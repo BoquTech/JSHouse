@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="renderer" content="webkit">
+	<meta http-equic="X-UA-Compatible" content="IE=edge">
+	<script>
+	 window.onload =get_paramet;
+
+
+   
+	 function get_paramet(){
+	 	var url=window.location.href;
+	 	var paramet_start_location=url.search("_type=");
+	 	var paramet_end_location=url.search("scope=")
+	 	var paramet=url.substr(paramet_location,paramet_end_location-6);
+	 	document.getElementById("code").innerHTML=paramet;
+	 }
+
+	</script>
+</head>
+<body>
+	<div id="code"></div>
+</body>
+
+</html>

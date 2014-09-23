@@ -25,11 +25,12 @@ class FeedbacksController < ApplicationController
   # POST /feedbacks
   # POST /feedbacks.json
   def create
-    @feedback = Feedback.new(feedback_params)
+    @property = Property.find(params[:property_id])
+    @feedback = @property.feedbacks.create(feedback_params)
 
     respond_to do |format|
       if @feedback.save
-        format.html { redirect_to @feedback }
+        format.html { redirect_to property_path(@property) }
         format.json { render :show, status: :created, location: @feedback }
       else
         format.html { render :new }
@@ -70,6 +71,6 @@ class FeedbacksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def feedback_params
-      params.require(:feedback).permit(:name, :phone, :email, :message)
+      params.require(:feedback).permit(:name, :phone, :email, :message,:property_id)
     end
 end

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+         
          $("#back-to-top").hide();
         $(function () {
          $(window).scroll(function(){

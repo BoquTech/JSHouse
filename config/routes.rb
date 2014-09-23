@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :properties do
     resources :item_images
+      resources :feedbacks
+    
   end
 
 
@@ -16,8 +18,9 @@ Rails.application.routes.draw do
   get 'sessions/destroy'
 
   resources :users
-
   resources :feedbacks
+
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
