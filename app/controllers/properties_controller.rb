@@ -14,6 +14,8 @@ class PropertiesController < ApplicationController
   # GET /properties/1.json
   def show
    @code=@property.description
+   @city=@property.city
+   @address=Address.where(city: @city).first
 
   end
 

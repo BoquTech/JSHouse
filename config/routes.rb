@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+  root 'welcome#index'
+
   resources :addresses do
     resources :properties 
   end
