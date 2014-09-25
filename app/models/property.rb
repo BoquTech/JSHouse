@@ -10,6 +10,7 @@ class Property < ActiveRecord::Base
   has_many :item_images 
   has_many :feedbacks
   belongs_to :address
+
   
 
   accepts_nested_attributes_for :item_images, allow_destroy: true

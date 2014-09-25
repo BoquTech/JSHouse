@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140925014008) do
+ActiveRecord::Schema.define(version: 20140925051742) do
 
   create_table "addresses", force: true do |t|
     t.string   "country"
@@ -111,10 +111,7 @@ ActiveRecord::Schema.define(version: 20140925014008) do
     t.datetime "updated_at"
     t.string   "country"
     t.string   "city"
-    t.integer  "address_id"
   end
-
-  add_index "properties", ["address_id"], name: "index_properties_on_address_id", using: :btree
 
   create_table "taggings", force: true do |t|
     t.integer  "tag_id"

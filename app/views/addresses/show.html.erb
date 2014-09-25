@@ -1,19 +1,97 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Country:</strong>
-  <%= @address.country %>
-</p>
+<!--头部-->
+	<div id="header">
+		<a class="icon" href="../index.html"></a>
+		 <div class="nav">
+		     <a href="../index.html">
+		     	<div class="home-icon"></div>
+		     	首页
+		     </a>
+		     <a href="../addresses">
+		     	<div class="city-icon"></div>
+		     	城市
+		     </a>
+		     <h1>咨询热线:147-1433-5039</h1>
 
-<p>
-  <strong>City:</strong>
-  <%= @address.city %>
-</p>
+		 </div>	   	
+	</div>
+	
+   <div class="clear"> </div>     
 
-<p>
-  <strong>City img:</strong>
-  <%= @address.city_img %>
-</p>
+<!--导航部分-->
+   <div class="tabs">
+            <ul>
+            	<li>
+            		<a href="#">
+            			<h1>伦敦</h1>
+            		</a>
+            	</li>
+            </ul> 
+    </div>  
 
-<%= link_to 'Edit', edit_address_path(@address) %> |
-<%= link_to 'Back', addresses_path %>
+    <div class="clear"> </div>
+
+<!--主体部分-->
+	
+	<div id="house">
+		<div class="containers">
+			
+         
+		    <ul>
+		    	<% @address.properties.each do  |property|%>
+		    	<li>
+		    		<div class="hot">
+                        <a href="<%=property_path(property)%>">
+		    			    <img src="<%=property.item_images.first%>"/>
+		    		    </a>
+		    		    <div class="abstract">
+		    			    <a href="<%=property_path(property)%>">
+		    			        <h1><%=property.building_name%></h1>
+		    			    </a>
+
+		    			    
+		    			    <p>户型：<%= @property.bedrooms%>卧<%= @property.bathrooms%>卫<%= @property.reception_rooms%>厅</p>
+		    			    <p>位置：<%= @property.address %></p>
+		    			    <p>价格：
+		    				   <b class="number"><%= property.buy %></b>
+		    			    </p>
+		    		    </div>
+		    		</div>
+		    	</li>
+		    	<% end %>
+		    </ul>
+		    
+
+	    </div>
+
+	</div>
+
+
+<div class="clear"> </div>
+
+<!--尾部-->
+	<div id="footer">
+	    <div class="containers">
+
+
+		    <div class="ft-top">
+		    	<ul>
+		    		<li><a href="./m/about.html">关于</a></li>
+		    		<li><a href="./m/contact.html">联系我们</a></li>
+		    		<li><a href="../login" target="_blank">后台登录</a></li>
+		    		<li><a href="http://tongji.baidu.com/web/welcome/ico?s=b7fbf908911ab72bbed3f31577ba9fd7" target="_blank">百度统计</a></li>
+		    	</ul>
+		    	<br/>
+		    </div>
+
+		    <div class="ft-bottom">
+			    <h1>合作伙伴</h1>
+			    <p>
+				    <a href="http://jsfund.cn/">嘉实基金</a>
+				    <a href="http://www.colliersresidential.com/">高力国际</a>
+				    <a href="http://www.hrei.com.hk/en/index.html">HREI</a>
+			    </p>
+		    </div>
+	    </div>
+	</div>
+	<a id="back-to-top"></a>
