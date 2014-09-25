@@ -5,10 +5,11 @@ class Property < ActiveRecord::Base
   validates_presence_of :description, :address, :building_name, :district, :buy, :rent, :refid, :building_age, :outdoor_size, :street, :layout
 
   validates_uniqueness_of :refid
-
+  
   before_create :set_uuid
   has_many :item_images 
   has_many :feedbacks
+  belongs_to :address
   
 
   accepts_nested_attributes_for :item_images, allow_destroy: true

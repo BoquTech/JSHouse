@@ -1,0 +1,102 @@
+<!--头部-->
+  <div id="header">
+    <a class="icon" href="../index.html"></a>
+     <div class="nav">
+         <a href="../index.html">
+          <div class="home-icon"></div>
+          首页
+         </a>
+         <a href="address/index">
+          <div class="city-icon"></div>
+          城市
+         </a>
+         <h1>咨询热线:147-1433-5039</h1>
+
+     </div>     
+  </div>
+  
+   <div class="clear"> </div> 
+
+
+<div id="city">
+  <div class="containers">
+    <div class="tabs">
+            <ul>
+              <li>
+                <a href="./listpage.html">
+                  <h1>澳大利亚</h1>
+                </a>
+              </li>
+            </ul> 
+    </div> 
+    <ul>
+        <% @australia.each do |c| %>
+          <li class="cc">
+            <div class="hot">
+                        <a href="./newsteadlist.html">
+                  <img src="<%=c.city_img%>"/>
+                </a>
+              <a class="price">
+                <%=c.city%>
+                </a>
+            </div>
+          </li>
+        <% end %>
+    </ul>
+    <div class="clear"> </div> 
+    <div class="tabs">
+            <ul>
+              <li>
+                <a href="./listpage.html">
+                  <h1>英国</h1>
+                </a>
+              </li>
+            </ul> 
+    </div> 
+    <ul>
+        <% @england.each do |c| %>
+          <li>
+            <div class="hot">
+                        <a href="./newsteadlist.html">
+                  <img src="<%=c.city_img%>"/>
+                </a>
+              <a class="price">
+                <%=c.city%>
+                </a>
+            </div>
+          </li>
+          <% end %>
+    </ul>
+
+      
+  </div>
+</div>
+
+
+
+<!--尾部-->
+
+<div id="footer">
+      <div class="containers">
+
+
+        <div class="ft-top">
+          <ul>
+            <li><a href="./m/about.html">关于</a></li>
+            <li><a href="./m/contact.html">联系我们</a></li>
+            <li><a href="../login" target="_blank">后台登录</a></li>
+            <li><a href="http://tongji.baidu.com/web/welcome/ico?s=b7fbf908911ab72bbed3f31577ba9fd7" target="_blank">百度统计</a></li>
+          </ul>
+          <br/>
+        </div>
+        <div class="ft-bottom">
+          <h1>合作伙伴</h1>
+          <p>
+            <a href="http://jsfund.cn/">嘉实基金</a>
+            <a href="http://www.colliersresidential.com/">高力国际</a>
+            <a href="http://www.hrei.com.hk/en/index.html">HREI</a>
+          </p>
+        </div>
+        </div>
+    </div>
+<a id="back-to-top"></a>

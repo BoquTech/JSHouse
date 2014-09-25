@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140922020556) do
+ActiveRecord::Schema.define(version: 20140923090156) do
 
   create_table "addresses", force: true do |t|
     t.string   "country"
-    t.string   "province"
     t.string   "city"
+    t.string   "city_img"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

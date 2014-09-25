@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
-  resources :properties do
-    resources :item_images
-      resources :feedbacks
-    
+  resources :addresses do
+    resources :properties 
   end
 
+  
+  resources :properties do
+      resources :item_images
+      resources :feedbacks
+    end
+    
+    
 
   get 'admin/index'
   controller :sessions do
