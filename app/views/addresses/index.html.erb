@@ -33,7 +33,7 @@
         <% @australia.each do |c| %>
           <li class="cc">
             <div class="hot">
-                        <a href="./newsteadlist.html">
+                <a href="<%=address_path(c)%>">
                   <img src="<%=c.city_img%>"/>
                 </a>
               <a class="price">
@@ -57,7 +57,7 @@
         <% @england.each do |c| %>
           <li>
             <div class="hot">
-                        <a href="./newsteadlist.html">
+                        <a href="<%=address_path(c)%>">
                   <img src="<%=c.city_img%>"/>
                 </a>
               <a class="price">
