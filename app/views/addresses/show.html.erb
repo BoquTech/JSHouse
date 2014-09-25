@@ -23,7 +23,7 @@
             <ul>
             	<li>
             		<a href="#">
-            			<h1>伦敦</h1>
+            			<h1><%=@address.city%></h1>
             		</a>
             	</li>
             </ul> 
@@ -38,7 +38,7 @@
 			
          
 		    <ul>
-		    	<% @address.properties.each do  |property|%>
+		    	<% @properties.each do  |property|%>
 		    	<li>
 		    		<div class="hot">
                         <a href="<%=property_path(property)%>">
@@ -47,11 +47,9 @@
 		    		    <div class="abstract">
 		    			    <a href="<%=property_path(property)%>">
 		    			        <h1><%=property.building_name%></h1>
-		    			    </a>
-
-		    			    
-		    			    <p>户型：<%= @property.bedrooms%>卧<%= @property.bathrooms%>卫<%= @property.reception_rooms%>厅</p>
-		    			    <p>位置：<%= @property.address %></p>
+		    			    </a>		    			    
+		    			    <p>户型：卧<%= property.bathrooms%>卫<%= property.reception_rooms%>厅</p>
+		    			    <p>位置：<%= property.address %></p>
 		    			    <p>价格：
 		    				   <b class="number"><%= property.buy %></b>
 		    			    </p>
