@@ -211,6 +211,11 @@ p{
 .tabs li{
   float:left;
 }
+.tabs h1{
+  color:#5c5c5c;s
+  height: 63px;
+  font-size: 24px;
+}
 
 .nav-line {
     background: #e7e7e7;
