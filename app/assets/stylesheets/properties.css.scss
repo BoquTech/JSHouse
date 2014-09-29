@@ -113,7 +113,8 @@
                     position:absolute;
                     top:0px;
                     left:0px;
-                    
+                    width:680px;
+                    height:500px;                    
                     display:none;
 
                 }
@@ -138,10 +139,11 @@
                         margin-right:3px;
                         float:left;
 
-                        .active{
+                        
+                    }
+                    .active{
                             background-position:0 -22px;
                         }
-                    }
                 }
 
                 .nivo-directionNav{

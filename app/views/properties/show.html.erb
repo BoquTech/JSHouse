@@ -19,7 +19,7 @@
 
       <div class="abstract">
         <h1>
-          <%=@property.building_name%>
+          <%=@property.building_name%> <%=@building_name1%>
         </h1>
         <div>
           <ul>
@@ -29,7 +29,7 @@
             </li>
             <li>
               位置：
-              <span class="position"><%= @property.address %></span>
+              <span class="position"><%= @address1 %></span>
               <a class="chack" href="#pro-invest">查看地图</a>
             </li>
           </ul>
@@ -77,12 +77,12 @@
       <div id="deal-stuff">
         <div class="introduce" id="pro-introduce">
           <h1>项目介绍</h1>
-          <p id="description"></p>
+          <p id="description"><%=@description1%></p>
         </div>
 
         <div class="introduce" id="pro-data">
           <h1>项目特色</h1>
-             <p class="description"><%= @property.features%></p>
+             <p class="description"><%= @features1%></p>
         </div>
 
         <div class="introduce" id="pro-invest">
@@ -149,8 +149,4 @@
 
 <a id="back-to-top"></a>
 
- <script>
-     var description=document.getElementById("description");
-     description.innerHTML='<%= @code.html_safe%>';
- </script>
 

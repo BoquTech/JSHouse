@@ -2,8 +2,52 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
 .feedbacks{
+ background-color:#f8f8f8;
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+
+  }
+
+}
+    #feedback_name,#feedback_phone,#feedback_email{
+   width: 245px;
+   height: 25px;
+   font-size:15px;
+   margin-left:5px;
+   border:1px solid #A4A4A4;
+  }
+  #feedback_message{
+  width:245px;
+  height:70px;
+  font-size:15px;
+  margin-left:5px;
+  border:1px solid #A4A4A4;
+  }
+
+  input[type="submit"]{
+  display:block;
+  height:35px;
+  width:249px;
+  color:#fff;
+  background-color:#e90000;
+  border:1px solid #e90000;
+  margin-left:5px;
+  font-size:15px;
+   border-radius:2px;
+}
+  input[type="submit"]:hover{
+  display:block;
+  height:35px;
+  width:249px;
+  color:#fff;
+  background-color:#ff0000;
+  border:1px solid #ff0000;
+  margin-left:5px;
+  font-size:15px;
+   border-radius:2px;
+}
 	table{
 	width:100%;
 	border-collapse:collapse;
