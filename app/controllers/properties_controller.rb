@@ -5,12 +5,7 @@ class PropertiesController < ApplicationController
 
   # GET /properties
   # GET /properties.json
-  def properties
-    require 'digest/sha1'
-    property_token='B0quTech'
-    array=[property_token,]
 
-  end
 
 
   def index
@@ -21,6 +16,7 @@ class PropertiesController < ApplicationController
   # GET /properties/1
   # GET /properties/1.json
   def show
+    print '你好'
 
     @city=@property.city
     @address=Address.where(city: @city).first
@@ -59,6 +55,7 @@ end
 
   # GET /properties/new
   def new
+
     @property = Property.new
   end
 
@@ -109,7 +106,7 @@ end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_property
-      @property = Property.find(params[:id])
+     @property = Property.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
