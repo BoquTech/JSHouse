@@ -1,5 +1,5 @@
 class FeedbacksController < ApplicationController
-  skip_before_action :authorize, only:[:new,:create]
+  skip_before_action :authorize, only:[:new]
   before_action :set_feedback, only: [:show, :edit, :update, :destroy]
 
   # GET /feedbacks
@@ -33,8 +33,7 @@ class FeedbacksController < ApplicationController
         format.html { redirect_to property_path(@property) }
         format.json { render :show, status: :created, location: @feedback }
       else
-        format.html { redirect_to property_path(@property)}
-
+        format.html { render :new }
         format.json { render json: @feedback.errors, status: :unprocessable_entity }
       end
     end
