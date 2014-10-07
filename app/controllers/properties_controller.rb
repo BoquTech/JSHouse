@@ -6,6 +6,9 @@ class PropertiesController < ApplicationController
   # GET /properties
   # GET /properties.json
 
+  def  api
+  print 'nihao'
+  end
 
 
   def index
@@ -16,7 +19,6 @@ class PropertiesController < ApplicationController
   # GET /properties/1
   # GET /properties/1.json
   def show
-    print '你好'
 
     @city=@property.city
     @address=Address.where(city: @city).first
@@ -36,7 +38,6 @@ class PropertiesController < ApplicationController
    @address=  URI.encode(@address2)
    uri = URI("http://openapi.baidu.com/public/2.0/bmt/translate?client_id=wczI7xUBqYDdxOWIQsnoCAi5&q=#{@building_name}%0A#{@description}%0A#{@features}%0A#{@address}&from=auto&to=auto
 ")
-
   Net::HTTP.start(uri.host, uri.port,
   :use_ssl => uri.scheme == 'https') do |http|
   request = Net::HTTP::Get.new uri
@@ -58,7 +59,7 @@ end
 
     @property = Property.new
   end
-
+  
   # GET /properties/1/edit
   def edit
   end

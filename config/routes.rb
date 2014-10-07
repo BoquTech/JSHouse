@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :properties do
       resources :item_images
       resources :feedbacks
+
     end
     
     
@@ -25,6 +26,9 @@ Rails.application.routes.draw do
 
   resources :users
   resources :feedbacks
+
+
+
 
   
 
