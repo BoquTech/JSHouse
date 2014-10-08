@@ -16,7 +16,7 @@ class PropertiesController < ApplicationController
   # GET /properties/1
   # GET /properties/1.json
   def show
-    print '你好'
+
 
     @city=@property.city
     @address=Address.where(city: @city).first

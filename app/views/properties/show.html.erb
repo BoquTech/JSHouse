@@ -32,7 +32,7 @@
             </li>
             <li>
               位置：
-              <span id="position" class="position"><%= @address1 %></span>
+              <span id="position" class="position"><%= @property.address %></span>
               <a class="chack" href="#pro-invest">查看地图</a>
             </li>
           </ul>
@@ -80,12 +80,12 @@
       <div id="deal-stuff">
         <div class="introduce" id="pro-introduce">
           <h1>项目介绍</h1>
-          <p id="description"><%=@description1%></p>
+          <p id="description"><%=@property.description.html_safe%></p>
         </div>
 
         <div class="introduce" id="pro-data">
           <h1>项目特色</h1>
-             <p class="description" id="feature"><%= @features1%></p>
+             <p class="description" id="feature"><%= @property.features.html_safe%></p>
         </div>
 
         <div class="introduce" id="pro-invest">
@@ -105,7 +105,7 @@
         <div class="map" id="pro-map">
           <h1>项目位置</h1> 
           <div class="google" id="google">
-            <iframe width="640" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://ditu.google.cn/maps?f=q&amp;source=s_q&amp;hl=zh-CN&amp;geocode=&amp;q=bromley&amp;aq=&amp;sll=<%=@property.latitude%>,<%=@property.longitude%>&amp;sspn=0.656307,1.454315&amp;brcurrent=3,0x0:0x0,0%3B5,0,0&amp;ie=UTF8&amp;hq=&amp;hnear=%EF%BC%88%E5%A4%A7%E4%B8%8D%E5%88%97%E9%A2%A0%EF%BC%89%E8%81%94%E5%90%88%E7%8E%8B%E5%9B%BD%E5%A4%A7%E4%BC%A6%E6%95%A6%E5%B8%83%E7%BD%97%E5%A7%86%E5%88%A9&amp;ll=<%=@property.latitude%>,<%=@property.longitude%>&amp;spn=<%=@property.latitude%>,<%=@property.longitude%>&amp;t=m&amp;z=11&amp;output=embed"></iframe><br /><small><a href="http://ditu.google.cn/maps?f=q&amp;source=embed&amp;hl=zh-CN&amp;geocode=&amp;q=bromley&amp;aq=&amp;sll=<%=@property.latitude%>,<%=@property.longitude%>&amp;sspn=<%=@property.latitude%>,<%=@property.longitude%>&amp;brcurrent=3,0x0:0x0,0%3B5,0,0&amp;ie=UTF8&amp;hq=&amp;hnear=%EF%BC%88%E5%A4%A7%E4%B8%8D%E5%88%97%E9%A2%A0%EF%BC%89%E8%81%94%E5%90%88%E7%8E%8B%E5%9B%BD%E5%A4%A7%E4%BC%A6%E6%95%A6%E5%B8%83%E7%BD%97%E5%A7%86%E5%88%A9&amp;ll=<%=@property.latitude%>,<%=@property.longitude%>&amp;spn=<%=@property.latitude%>,<%=@property.longitude%>&amp;t=m&amp;z=11" style="color:#0000FF;text-align:left">查看大图</a></small>
+            <iframe width="640" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://ditu.google.cn/maps?f=q&amp;source=s_q&amp;hl=zh-CN&amp;geocode=&amp;q=<%=@property.building_name%>&amp;sll=<%=@property.latitude%>,<%=@property.longitude%>&amp;sspn=<%=@property.latitude%>,<%=@property.longitude%>&amp;brcurrent=3,0x0:0x0,0%3B5,0,0&amp;ie=UTF8&amp;hq=&amp;ll=<%=@property.latitude%>,<%=@property.longitude%>&amp;spn=<%=@property.latitude%>,<%=@property.longitude%>&amp;t=m&amp;z=11&amp;output=embed"></iframe><br /><small><a href="http://ditu.google.cn/maps?f=q&amp;source=embed&amp;hl=zh-CN&amp;geocode=&amp;q=<%=@property.building_name%>&amp;sll=<%=@property.latitude%>,<%=@property.longitude%>&amp;sspn=<%=@property.latitude%>,<%=@property.longitude%>&amp;brcurrent=3,0x0:0x0,0%3B5,0,0&amp;ie=UTF8&amp;hq=&amp;ll=<%=@property.latitude%>,<%=@property.longitude%>&amp;spn=<%=@property.latitude%>,<%=@property.longitude%>&amp;t=m&amp;z=11" style="color:#0000FF;text-align:left">查看大图</a></small>
                
           </div>
         </div>
@@ -153,20 +153,24 @@
 <a id="back-to-top"></a>
 <script>
 function translate1(){
-      document.getElementById("buliding_name").innerHTML="<%=@property.building_name.html_safe%>";
-      document.getElementById("position").innerHTML="<%= @property.address.html_safe%>";
-      document.getElementById("description").innerHTML="<%=@property.description.html_safe%>";
-      document.getElementById("feature").innerHTML="<%= @property.features.html_safe%>";
-      document.getElementById("translate1").style.display="none";
-      document.getElementById("translate2").style.display="block";
-}
-function translate2(){
+
       document.getElementById("buliding_name").innerHTML="<%=@building_name1%>";
       document.getElementById("position").innerHTML="<%= @address1%>";
       document.getElementById("description").innerHTML="<%=@description1%>";
       document.getElementById("feature").innerHTML="<%= @features1%>";
+      document.getElementById("translate1").style.display="none";
+      document.getElementById("translate2").style.display="block";
+}
+
+
+function translate2(){
+        document.getElementById("buliding_name").innerHTML="<%=@property.building_name%>";
+      document.getElementById("position").innerHTML="<%= @property.address.html_safe%>";
+      document.getElementById("description").innerHTML="<%=@property.description.html_safe%>";
+      document.getElementById("feature").innerHTML="<%= @property.features.html_safe%>";
       document.getElementById("translate1").style.display="block";
       document.getElementById("translate2").style.display="none";
+      
 }
 </script>
 
