@@ -67,6 +67,48 @@
                         color:#818080;
                         line-height:24px;
                     }
+                    button{
+                         float:right;
+                         display:block;
+                         margin-top:-30px;
+                        height:30px;
+                        width:70px;
+                        color:#e90000;
+                        background-color:#fff;
+                        border:1px solid #e90000;
+                        font-size:15px;
+                        border-radius:2px;
+                    }
+                    button:hover{
+                        float:right;
+                        display:block;
+                        height:30px;
+                        width:70px;
+                        color:#fff;
+                        background-color:#e90000;
+                        border:1px solid #e90000;
+                        font-size:15px;
+                        border-radius:2px;
+
+                    }
+                    button:active{
+                        float:right;
+                        display:block;
+                        height:30px;
+                        width:70px;
+                        color:#fff;
+                        background-color:#e90000;
+                        border:1px solid #e90000;
+                        font-size:20px;
+                        border-radius:2px;
+                    }
+                    .translate1{
+                        display:block;
+                    }
+                    .translate2{
+                        display:none;
+                    }
+
                 }
         
                 li{

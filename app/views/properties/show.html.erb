@@ -19,8 +19,11 @@
 
       <div class="abstract">
         <h1>
-          <%=@property.building_name%> <%=@building_name1%>
+         <div id="buliding_name"> <%=@property.building_name%> <%=@building_name1%></div>
+          <button id="translate1" class="translate1" onclick="translate1();">翻译</button>
+          <button id="translate2" class="translate2" onclick="translate2();">翻译</button>
         </h1>
+
         <div>
           <ul>
             <li>
@@ -29,7 +32,7 @@
             </li>
             <li>
               位置：
-              <span class="position"><%= @address1 %></span>
+              <span id="position" class="position"><%= @address1 %></span>
               <a class="chack" href="#pro-invest">查看地图</a>
             </li>
           </ul>
@@ -82,7 +85,7 @@
 
         <div class="introduce" id="pro-data">
           <h1>项目特色</h1>
-             <p class="description"><%= @features1%></p>
+             <p class="description" id="feature"><%= @features1%></p>
         </div>
 
         <div class="introduce" id="pro-invest">
@@ -148,5 +151,23 @@
 <%=render 'public/footer'%>
 
 <a id="back-to-top"></a>
+<script>
+function translate1(){
+      document.getElementById("buliding_name").innerHTML="<%=@property.building_name.html_safe%>";
+      document.getElementById("position").innerHTML="<%= @property.address.html_safe%>";
+      document.getElementById("description").innerHTML="<%=@property.description.html_safe%>";
+      document.getElementById("feature").innerHTML="<%= @property.features.html_safe%>";
+      document.getElementById("translate1").style.display="none";
+      document.getElementById("translate2").style.display="block";
+}
+function translate2(){
+      document.getElementById("buliding_name").innerHTML="<%=@building_name1%>";
+      document.getElementById("position").innerHTML="<%= @address1%>";
+      document.getElementById("description").innerHTML="<%=@description1%>";
+      document.getElementById("feature").innerHTML="<%= @features1%>";
+      document.getElementById("translate1").style.display="block";
+      document.getElementById("translate2").style.display="none";
+}
+</script>
 
 
