@@ -26,6 +26,11 @@ Rails.application.routes.draw do
   resources :users
   resources :feedbacks
 
+   namespace :api, path: '/api/1.0', format: 'json' do
+    resources :items
+  end
+
+
   
 
   # The priority is based upon order of creation: first created -> highest priority.
