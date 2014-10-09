@@ -27,15 +27,16 @@ class FeedbacksController < ApplicationController
   def create
     @property = Property.find(params[:property_id])
     @feedback = @property.feedbacks.create(feedback_params)
-
+    #发送邮件
     respond_to do |format|
       if @feedback.save
+        FeedbackNotifier.new_feedback(@feedback).deliver 
         format.html { redirect_to property_path(@property) }
         format.js
         format.json { render :show, status: :created, location: @feedback }
       else
-        format.html { render :new }
-        format.json { render json: @feedback.errors, status: :unprocessable_entity }
+        format.html { redirect_to property_path(@property) }
+        format.js { render action: 'create_fail' }
       end
     end
   end
@@ -45,6 +46,9 @@ class FeedbacksController < ApplicationController
   def update
     respond_to do |format|
       if @feedback.update(feedback_params)
+        if @feedback.reply.present?
+          FeedbackNotifier.reply_feedback(@feedback).deliver
+        end
         format.html { redirect_to @feedback, notice: 'Feedback was successfully updated.' }
         format.json { render :show, status: :ok, location: @feedback }
       else
@@ -72,6 +76,6 @@ class FeedbacksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def feedback_params
-      params.require(:feedback).permit(:name, :phone, :email, :message,:property_id)
+      params.require(:feedback).permit(:name, :phone, :email, :reply ,:message,:property_id)
     end
 end

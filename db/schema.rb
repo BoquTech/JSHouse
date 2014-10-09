@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140925051742) do
+ActiveRecord::Schema.define(version: 20141009024023) do
 
   create_table "addresses", force: true do |t|
     t.string   "country"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20140925051742) do
     t.string   "manager"
     t.string   "ip"
     t.integer  "property_id"
+    t.string   "reply"
   end
 
   add_index "feedbacks", ["property_id"], name: "index_feedbacks_on_property_id", using: :btree
