@@ -29,7 +29,13 @@ gem 'spring',        group: :development
 gem 'capistrano', '~> 3.2.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+
 gem 'acts-as-taggable-on'
+
+gem 'uuidtools' 
+group :development do
+  gem 'letter_opener'
+end
 
 # Use unicorn as the app server
 # gem 'unicorn'
