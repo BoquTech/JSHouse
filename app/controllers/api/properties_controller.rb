@@ -21,8 +21,7 @@ class PropertiesController < ApplicationController
     end
 end
 
-   
-  end
+
 
   # GET /properties/new
   def new

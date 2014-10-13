@@ -1,5 +1,5 @@
 class FeedbacksController < ApplicationController
-  skip_before_action :authorize, only:[:new]
+  skip_before_action :authorize, only:[:new,:create,:update,:destroy]
   before_action :set_feedback, only: [:show, :edit, :update, :destroy]
 
   # GET /feedbacks
@@ -27,7 +27,6 @@ class FeedbacksController < ApplicationController
   def create
     @property = Property.find(params[:property_id])
     @feedback = @property.feedbacks.create(feedback_params)
-    #发送邮件
     respond_to do |format|
       if @feedback.save
         FeedbackNotifier.new_feedback(@feedback).deliver 

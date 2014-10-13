@@ -1,5 +1,5 @@
 class FeedbackNotifier < ActionMailer::Base
-  default from: "noreply@jsfund.cn"
+  default from: "783814127@qq.com"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:

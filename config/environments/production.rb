@@ -79,4 +79,23 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+
+  config.action_mailer.perform_deliveries = true  
+  config.action_mailer.raise_delivery_errors = true  
+  config.action_mailer.default :charset => "utf-8" 
+
+  config.action_mailer.default_url_options = { :host => '182.92.185.97' }
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings={
+    :address => "smtp.qq.com",
+    :port =>25,
+    :domain =>"qq.com",
+    :authentication =>"plain",
+    :user_name =>"783814127@qq.com",
+    :password =>"qsc123456",
+    :enable_starttls_auto => false
+
+  }
 end
