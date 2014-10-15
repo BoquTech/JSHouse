@@ -27,7 +27,7 @@ Rails.application.routes.draw do
   resources :feedbacks
 
    namespace :api, path: '/api/1.0', format: 'json' do
-    resources :items
+    resources :properties
   end
 
 

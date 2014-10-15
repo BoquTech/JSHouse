@@ -1,4 +1,4 @@
-class PropertiesController < ApplicationController
+class Api::PropertiesController < ApplicationController
   layout "property",only:[:show]
   skip_before_action :authorize
   before_action :set_property, only: [:show, :edit, :update, :destroy]
@@ -19,8 +19,7 @@ class PropertiesController < ApplicationController
     respond_to do |wants|
       wants.json { render action: 'show' }
     end
-end
-
+  end
 
 
   # GET /properties/new
@@ -36,9 +35,8 @@ end
   # POST /properties
   # POST /properties.json
   def create
+    puts property_params
     @property = Property.new(property_params)
-    @property.user_id = current_user.id
-    @property.data_source = "Knight Frank"
 
     respond_to do |format|
       if @property.save
@@ -83,7 +81,7 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def property_params
-      params.require(:property).permit(:title, :description, :address, :bedrooms, :bathrooms, :family_rooms, :reception_rooms, :latitude, :longitude, :features, :agent_id, :agent_name, :date_available, :building_name, :district, :indoor_size, :saleable_area, :buy, :rent, :refid, :building_age, :outdoor_size, :float, :inclusive_display, :inclusive_mfee, :inclusive_govr, :address_display, :street, :view, :layout, :floor, :uuid, :enabled,:tag_list, item_images_attributes: [:id, :image_url,:_destroy])
+      params.permit(:title, :description, :address, :bedrooms, :bathrooms, :family_rooms, :reception_rooms, :latitude, :longitude, :features, :agent_id, :agent_name, :date_available, :building_name, :district, :indoor_size, :saleable_area, :buy, :rent, :refid, :building_age, :outdoor_size, :float, :inclusive_display, :inclusive_mfee, :inclusive_govr, :address_display, :street, :view, :layout, :floor, :uuid, :enabled,:tag_list, item_images_attributes: [:refid, :image_url,:_destroy])
     end
    
 end

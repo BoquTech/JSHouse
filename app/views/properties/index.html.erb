@@ -16,15 +16,14 @@
   <div id="house">
     <div class="containers">
       <div id="masonry" class="container-fluid">
-          <% @properties.each do  |property|%>
+        
             <div class="box">
-                <a href="<%=property_path(property)%>">
-                  <img src="<%=property.item_images.first%>"/>
+                <a href="<%=property_path(@property)%>">
+                  <img   src="<%=@property.item_images.first.image_url%>"/>
                 </a>
             </div>
-          <% end %>
-        </ul>
-        
+     
+        </ul>       
        </div>
       </div>
 
@@ -33,7 +32,7 @@
 
 <div class="clear"> </div>
 
-<%=render 'public/header'%>
+<%=render 'public/footer'%>
 <script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
 <script src="http://jq22.qiniudn.com/masonry-docs.min.js"></script>
 

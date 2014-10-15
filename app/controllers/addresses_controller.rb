@@ -32,7 +32,7 @@ class AddressesController < ApplicationController
   # POST /addresses.json
   def create
     @address = Address.new(address_params)
-
+    puts address_params
     respond_to do |format|
       if @address.save
         format.html { redirect_to @address, notice: 'Address was successfully created.' }

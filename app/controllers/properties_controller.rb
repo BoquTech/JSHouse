@@ -9,8 +9,7 @@ class PropertiesController < ApplicationController
 
 
   def index
-    @properties = Property.all
-  
+    @property = Property.all
     end
 
   # GET /properties/1
