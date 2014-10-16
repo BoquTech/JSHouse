@@ -4,7 +4,7 @@
 <div id="tabs">
 	<ul>
 		<li>
-			<a href="#">
+			<a href="<%=address_path(@address)%>">
 				<h1><%= @property.city %></h1>
 			</a>
 
@@ -19,7 +19,7 @@
 
       <div class="abstract">
         <h1>
-         <div id="buliding_name"> <%=@property.building_name%> <%=@building_name1%></div>
+         <div id="buliding_name"> <%=@property.building_name%></div>
           <button id="translate1" class="translate1" onclick="translate1();">翻译</button>
           <button id="translate2" class="translate2" onclick="translate2();">翻译</button>
         </h1>
@@ -155,9 +155,7 @@
 function translate1(){
 
       document.getElementById("buliding_name").innerHTML="<%=@building_name1%>";
-      document.getElementById("position").innerHTML="<%= @address1%>";
       document.getElementById("description").innerHTML="<%=@description1%>";
-      document.getElementById("feature").innerHTML="<%= @features1%>";
       document.getElementById("translate1").style.display="none";
       document.getElementById("translate2").style.display="block";
 }
@@ -165,9 +163,7 @@ function translate1(){
 
 function translate2(){
         document.getElementById("buliding_name").innerHTML="<%=@property.building_name%>";
-      document.getElementById("position").innerHTML="<%= @property.address.html_safe%>";
       document.getElementById("description").innerHTML="<%=@property.description.html_safe%>";
-      document.getElementById("feature").innerHTML="<%= @property.features.html_safe%>";
       document.getElementById("translate1").style.display="block";
       document.getElementById("translate2").style.display="none";
       

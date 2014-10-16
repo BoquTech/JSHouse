@@ -23,13 +23,15 @@ Rails.application.routes.draw do
 
   get 'sessions/destroy'
 
+
   resources :users
   resources :feedbacks
 
    namespace :api, path: '/api/1.0', format: 'json' do
-    resources :properties
-  end
 
+       resources :properties
+  end
+  
 
   
 
