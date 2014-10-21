@@ -32,10 +32,23 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.perform_deliveries = true  
+  config.action_mailer.raise_delivery_errors = true  
+  config.action_mailer.default :charset => "utf-8" 
 
-  config.action_mailer.delivery_method = :letter_opener
+  config.action_mailer.default_url_options = { :host => '182.92.185.97' }
 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings={
+    :address => "smtp.qq.com",
+    :port =>25,
+    :domain =>"qq.com",
+    :authentication =>"plain",
+    :user_name =>"783814127@qq.com",
+    :password =>"qsc123456",
+    :enable_starttls_auto => false
+
+  }
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
