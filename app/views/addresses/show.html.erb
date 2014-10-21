@@ -25,16 +25,16 @@
 		    	<% @properties.each do  |property|%>
 		    	<li>
 		    		<div class="hot">
-                        <a href="<%=property_path(property)%>">
+                        <a href="<%=property_path(property)%>" target="_blank">
 		    			    <img src="<%=property.item_images.first.image_url%>"/>
 		    		    </a>
 		    		    <div class="abstract">
 		    			    <a href="<%=property_path(property)%>">
 		    			        <h1><%=property.building_name%></h1>
 		    			    </a>		    			    
-		    			    <p>户型：卧<%= property.bathrooms%>卫<%= property.reception_rooms%>厅</p>
-		    			    <p>位置：<%= property.address %></p>
-		    			    <p>价格：
+		    			    <p>Style：卧<%= property.bathrooms%>卫<%= property.reception_rooms%>厅</p>
+		    			    <p>Address：<%= property.address %></p>
+		    			    <p>Price：
 		    				   <b class="number"><%= property.buy %></b>
 		    			    </p>
 		    		    </div>
