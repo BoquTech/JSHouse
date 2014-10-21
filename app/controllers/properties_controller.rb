@@ -9,7 +9,7 @@ class PropertiesController < ApplicationController
 
 
   def index
-    @properties= Property.where(enabled: '1').limit(1000)
+    @properties= Property.where(enabled: '1').limit(300)
    end
   # GET /properties/1
   # GET /properties/1.json
