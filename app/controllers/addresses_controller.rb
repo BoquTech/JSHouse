@@ -16,7 +16,7 @@ class AddressesController < ApplicationController
   # GET /addresses/1.json
   def show
   @city=@address.city
-  @properties=Property.where(city: @city,enabled: "1")
+  @properties=Property.where(city: @city)
   end
 
   # GET /addresses/new

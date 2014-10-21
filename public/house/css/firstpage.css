@@ -87,12 +87,6 @@ a {
     width: 20px;
 	background: url("../images/city-icon.png") no-repeat ;
 }
-.see-icon{
-	float:left;
-    height: 20px;
-    width: 20px;
-	background: url("../images/city-icon.png") no-repeat ;
-}
 
 .search{
   margin-right:5px;

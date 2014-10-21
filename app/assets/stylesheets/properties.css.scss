@@ -5,6 +5,7 @@
 
     #house{
         margin-top:20px;
+        height:100%;
         position:relative;
         h1{
             height:auto;
@@ -12,6 +13,7 @@
         li{
             float:left;
         }
+<<<<<<< HEAD
         
         .box{
             border:1px solid #fff;
@@ -60,6 +62,18 @@
             }
             .hidden{
                 display:none;
+=======
+        .container-fluid {
+            padding: 20px;
+        }
+        .box{
+            margin-bottom: 20px;
+            float: left;
+            width: 220px;
+            img{
+                height:226px;
+                width:400px;
+>>>>>>> parent of 53a235b... v1.9.9.2
             }
         }
         

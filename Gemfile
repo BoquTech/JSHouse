@@ -32,8 +32,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'acts-as-taggable-on'
 
-gem 'cocoon'
-gem 'kaminari'
+gem "cocoon"
 
 
 gem 'uuidtools' 

@@ -15,6 +15,7 @@
   
   <div id="house">
     <div class="containers">
+<<<<<<< HEAD
       <ul>
           <% @properties.each do |property| %>
           <li>
@@ -29,14 +30,46 @@
             </div>
           </li>
           <% end %>     
+=======
+      <div id="masonry" class="container-fluid">
+        
+            <div class="box">
+                <a href="<%=property_path(@property)%>">
+                  <img   src="<%=@property.item_images.first.image_url%>"/>
+                </a>
+            </div>
+     
+>>>>>>> parent of 53a235b... v1.9.9.2
         </ul>       
        </div>
       </div>
 
   </div>
+
+
 <div class="clear"> </div>
 
-
 <%=render 'public/footer'%>
+<<<<<<< HEAD
 <a id="back-to-top"></a>
+=======
+<script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://jq22.qiniudn.com/masonry-docs.min.js"></script>
 
+<script>
+$(function() {
+    var $container = $('#masonry');
+    $container.imagesLoaded(function() {
+        $container.masonry({
+                itemSelector: '.box',
+                gutterWidth: 20,
+                isAnimated: true,
+            });
+        });
+    });
+</script>
+
+
+>>>>>>> parent of 53a235b... v1.9.9.2
+
+<%= link_to 'New Property', new_property_path %>

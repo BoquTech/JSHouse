@@ -19,9 +19,15 @@
 
       <div class="abstract">
         <h1>
+<<<<<<< HEAD
          <div id="buliding_name"> <%=@property.building_name%></div>
           <button id="translate1" class="translate1" onclick="translate1();">点击翻译</button>
           <button id="translate2" class="translate2" onclick="translate2();">translate</button>
+=======
+         <div id="buliding_name"> <%=@property.building_name%> <%=@building_name1%></div>
+          <button id="translate1" class="translate1" onclick="translate1();">翻译</button>
+          <button id="translate2" class="translate2" onclick="translate2();">翻译</button>
+>>>>>>> parent of 53a235b... v1.9.9.2
         </h1>
 
         <div>
@@ -157,7 +163,13 @@
 function translate1(){
 
       document.getElementById("buliding_name").innerHTML="<%=@building_name1%>";
+<<<<<<< HEAD
       document.getElementById("description").innerHTML="<small>通过百度翻译，不准之处请客官谅解</small> <br><br><br><%=@description1%>";
+=======
+      document.getElementById("position").innerHTML="<%= @address1%>";
+      document.getElementById("description").innerHTML="<%=@description1%>";
+      document.getElementById("feature").innerHTML="<%= @features1%>";
+>>>>>>> parent of 53a235b... v1.9.9.2
       document.getElementById("translate1").style.display="none";
       document.getElementById("translate2").style.display="block";
 }
@@ -165,7 +177,13 @@ function translate1(){
 
 function translate2(){
         document.getElementById("buliding_name").innerHTML="<%=@property.building_name%>";
+<<<<<<< HEAD
       document.getElementById("description").innerHTML="<%=@property.description.html_safe %>";
+=======
+      document.getElementById("position").innerHTML="<%= @property.address.html_safe%>";
+      document.getElementById("description").innerHTML="<%=@property.description.html_safe%>";
+      document.getElementById("feature").innerHTML="<%= @property.features.html_safe%>";
+>>>>>>> parent of 53a235b... v1.9.9.2
       document.getElementById("translate1").style.display="block";
       document.getElementById("translate2").style.display="none";
       
