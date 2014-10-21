@@ -9,36 +9,25 @@ class PropertiesController < ApplicationController
 
 
   def index
-<<<<<<< HEAD
-    @properties= Property.where(enabled: '1').limit(1000)
+    @properties= Property.where(enabled: '1').limit(300)
    end
-=======
-    @property = Property.all
-    end
-
->>>>>>> parent of 53a235b... v1.9.9.2
   # GET /properties/1
   # GET /properties/1.json
   def show
 
-
+     
     @city=@property.city
     @address=Address.where(city: @city).first
-   
+    
    require 'uri'
 
    require 'net/http'
   
    @building_name2=@property.building_name
    @description2=@property.description
-   @address2=@property.address
-   @features2=@property.features
-
    @building_name =  URI.encode(@building_name2)
    @description=  URI.encode(@description2)
-   @features=  URI.encode(@features2)
-   @address=  URI.encode(@address2)
-   uri = URI("http://openapi.baidu.com/public/2.0/bmt/translate?client_id=wczI7xUBqYDdxOWIQsnoCAi5&q=#{@building_name}%0A#{@description}%0A#{@features}%0A#{@address}&from=auto&to=auto
+   uri = URI("http://openapi.baidu.com/public/2.0/bmt/translate?client_id=wczI7xUBqYDdxOWIQsnoCAi5&q=#{@building_name}%0A#{@description}&from=auto&to=auto
 ")
 
   Net::HTTP.start(uri.host, uri.port,
@@ -46,11 +35,8 @@ class PropertiesController < ApplicationController
   request = Net::HTTP::Get.new uri
   response = http.request request
   res=JSON.parse response.body
-
   @building_name1=res["trans_result"][0]['dst']
   @description1=res["trans_result"][1]['dst'].html_safe
-  @features1=res["trans_result"][2]['dst'].html_safe
-  @address1=res["trans_result"][3]['dst'].html_safe
 
 end
 

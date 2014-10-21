@@ -7,7 +7,6 @@ class Api::PropertiesController < ApplicationController
   # GET /properties.json
 
 
-
   def index
     @properties = Property.all
   

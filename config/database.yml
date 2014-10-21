@@ -51,4 +51,4 @@ test:
 #
 production:
   <<: *default
-  database: jshouse_development
+  database: jshouse_production

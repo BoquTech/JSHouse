@@ -2,10 +2,8 @@
 
 
 .properties{
-
     #house{
         margin-top:20px;
-        height:100%;
         position:relative;
         h1{
             height:auto;
@@ -13,70 +11,25 @@
         li{
             float:left;
         }
-<<<<<<< HEAD
-        
-        .box{
-            border:1px solid #fff;
-            margin:10px;
-            height:220px;
-            width:300px;
-            .price{ 
-                margin-top:188px;
-                position:absolute;
-                height:22px;
-                width:290px;
-                font-size:15px;
-                color:#fff;
-                z-index:2;
-                padding:5px;
-            }
-            .price2{ 
-                margin-top:188px;
-                position:absolute;
-                height:22px;
-                background-color:#000;
-                width:290px;
-                font-size:15px;
-                color:#fff;
-                z-index:1;
-                padding:5px;
-                opacity: 0.4;
-
-            }
-              .price1{ 
-                margin-left:215px;
-                margin-top:10px;
-                position:absolute;
-                height:22px;
-                width:80px;
-                background-color: #be0000;
-                font-size:14px;
-                color:#fff;
-                z-index:1;
-                padding:5px;
-            }
-             .show{
-                height:220px;
-                width:300px;
-                position:absolute;                   
-            }
-            .hidden{
-                display:none;
-=======
         .container-fluid {
-            padding: 20px;
-        }
-        .box{
-            margin-bottom: 20px;
-            float: left;
-            width: 220px;
-            img{
-                height:226px;
-                width:400px;
->>>>>>> parent of 53a235b... v1.9.9.2
+            padding:10px;
+            .box{
+
+                margin-bottom: 20px;
+                margin-left:10px;
+                margin-right:10px;
+                float: left;
+                width: 300px;
+                
+              
+
+                img{
+                   width:300px;
+
+                   
+                }
             }
         }
-        
 
         .abstract{
             width:260px;
@@ -174,11 +127,11 @@
                         line-height:24px;
                     }
                     button{
-                        float:right;
-                        display:block;
-                        margin-top:-30px;
+                         float:right;
+                         display:block;
+                         margin-top:-30px;
                         height:30px;
-                        width:80px;
+                        width:70px;
                         color:#e90000;
                         background-color:#fff;
                         border:1px solid #e90000;
@@ -189,7 +142,7 @@
                         float:right;
                         display:block;
                         height:30px;
-                        width:80px;
+                        width:70px;
                         color:#fff;
                         background-color:#e90000;
                         border:1px solid #e90000;
@@ -201,7 +154,7 @@
                         float:right;
                         display:block;
                         height:30px;
-                        width:80px;
+                        width:70px;
                         color:#fff;
                         background-color:#e90000;
                         border:1px solid #e90000;

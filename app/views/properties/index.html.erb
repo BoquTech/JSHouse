@@ -1,10 +1,10 @@
-<%=render 'public/header1'%>   
+<%=render 'public/header'%>   
 
 <!--导航部分-->
    <div class="tabs">
             <ul>
               <li>
-                  <h1><%="Hot"+" "+"Properties"%></h1>
+                  <h1>所有房产</h1>
               </li>
             </ul> 
     </div>  
@@ -15,61 +15,28 @@
   
   <div id="house">
     <div class="containers">
-<<<<<<< HEAD
-      <ul>
-          <% @properties.each do |property| %>
-          <li>
-            <div class="box">
-              <a href="<%=property_path(property)%>" target="_blank" >
-                  <img class="show" src="<%=property.item_images.first.image_url%>" onerror="this.src='../house/firstpage.jpg'"/>
-                
-                  <a class="price"><%= property.building_name+","+property.address%></a>
-                  <a class="price1"><%="$"+property.buy.to_i.to_s%></a>
-                  <a class="price2"></a>
-                  </a>            
-            </div>
-          </li>
-          <% end %>     
-=======
       <div id="masonry" class="container-fluid">
-        
+          <% @properties.each do |property| %>
             <div class="box">
-                <a href="<%=property_path(@property)%>">
-                  <img   src="<%=@property.item_images.first.image_url%>"/>
+              <a href="<%=property_path(property)%>">
+                  <img   src="<%=property.item_images.first.image_url%>"/>
+                  <a class="price"><%=property.building_name+","+property.address %></a>
                 </a>
+            
             </div>
+          <% end %>
+
      
->>>>>>> parent of 53a235b... v1.9.9.2
-        </ul>       
+        </div>       
        </div>
       </div>
 
   </div>
-
-
 <div class="clear"> </div>
 
+
 <%=render 'public/footer'%>
-<<<<<<< HEAD
 <a id="back-to-top"></a>
-=======
-<script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
-<script src="http://jq22.qiniudn.com/masonry-docs.min.js"></script>
-
 <script>
-$(function() {
-    var $container = $('#masonry');
-    $container.imagesLoaded(function() {
-        $container.masonry({
-                itemSelector: '.box',
-                gutterWidth: 20,
-                isAnimated: true,
-            });
-        });
-    });
-</script>
+var image=document.getElementBy
 
-
->>>>>>> parent of 53a235b... v1.9.9.2
-
-<%= link_to 'New Property', new_property_path %>

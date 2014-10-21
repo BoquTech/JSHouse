@@ -8,15 +8,15 @@ class AddressesController < ApplicationController
 
   def index
     @addresses = Address.all
-    @australia=Address.where(country: 'Australia')
-    @england=Address.where(country: 'England')
+    @australia=Address.where(country: '澳大利亚')
+    @england=Address.where(country: '英国')
   end
 
   # GET /addresses/1
   # GET /addresses/1.json
   def show
   @city=@address.city
-  @properties=Property.where(city: @city)
+  @properties=Property.where(city: @city,enabled: "1")
   end
 
   # GET /addresses/new

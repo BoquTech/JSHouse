@@ -1,5 +1,5 @@
 class FeedbacksController < ApplicationController
-  skip_before_action :authorize, only:[:new,:create,:update,:destroy]
+  skip_before_action :authorize, only:[:new,:edit,:create,:update,:destroy]
   before_action :set_feedback, only: [:show, :edit, :update, :destroy]
 
   # GET /feedbacks
