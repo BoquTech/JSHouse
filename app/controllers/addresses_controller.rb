@@ -8,8 +8,8 @@ class AddressesController < ApplicationController
 
   def index
     @addresses = Address.all
-    @australia=Address.where(country: '澳大利亚')
-    @england=Address.where(country: '英国')
+    @australia=Address.where(country: 'Australia')
+    @england=Address.where(country: 'England')
   end
 
   # GET /addresses/1
