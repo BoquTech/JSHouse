@@ -4,7 +4,7 @@
    <div class="tabs">
             <ul>
               <li>
-                  <h1>所有房产</h1>
+                  <h1><%="Hot"+" "+"Properties"%></h1>
               </li>
             </ul> 
     </div>  
@@ -15,19 +15,21 @@
   
   <div id="house">
     <div class="containers">
-      <div id="masonry" class="container-fluid">
+      <ul>
           <% @properties.each do |property| %>
+          <li>
             <div class="box">
-              <a href="<%=property_path(property)%>">
-                  <img   src="<%=property.item_images.first.image_url%>"/>
-                  <a class="price"><%=property.building_name+","+property.address %></a>
-                </a>
-            
+              <a href="<%=property_path(property)%>" target="_blank" >
+                  <img class="show" src="<%=property.item_images.first.image_url%>" onerror="this.src='../house/firstpage.jpg'"/>
+                
+                  <a class="price"><%= property.building_name+","+property.address%></a>
+                  <a class="price1"><%="$"+property.buy.to_i.to_s%></a>
+                  <a class="price2"></a>
+                  </a>            
             </div>
-          <% end %>
-
-     
-        </div>       
+          </li>
+          <% end %>     
+        </ul>       
        </div>
       </div>
 
@@ -37,6 +39,4 @@
 
 <%=render 'public/footer'%>
 <a id="back-to-top"></a>
-<script>
-var image=document.getElementBy
 
