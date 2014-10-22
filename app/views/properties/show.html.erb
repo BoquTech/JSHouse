@@ -4,7 +4,7 @@
 <div id="tabs">
 	<ul>
 		<li>
-			<a href="#">
+			<a href="<%=address_path(@address)%>">
 				<h1><%= @property.city %></h1>
 			</a>
 
@@ -20,21 +20,20 @@
       <div class="abstract">
         <h1>
          <div id="buliding_name"> <%=@property.building_name%></div>
-          <button id="translate1" class="translate1" onclick="translate1();">点击翻译</button>
-          <button id="translate2" class="translate2" onclick="translate2();">translate</button>
+          <button id="translate1" class="translate1" onclick="translate1();">翻译</button>
+          <button id="translate2" class="translate2" onclick="translate2();">翻译</button>
         </h1>
 
         <div>
           <ul>
-            
             <li>
-              <%="位置:"%>
-              <span id="position" class="position"><%= @property.address %></span>
-              <a class="chack" href="#pro-invest"><%= "查看地图"%></a>
+              房型:
+              <span class="kind"><%= @property.bedrooms%>卧<%= @property.bathrooms%>卫<%= @property.reception_rooms%>厅</span>
             </li>
             <li>
-              <%= "价格:"%>
-              <span class="kind"><%="$"+@property.buy.to_i.to_s%></span>
+              位置：
+              <span id="position" class="position"><%= @property.address %></span>
+              <a class="chack" href="#pro-invest">查看地图</a>
             </li>
           </ul>
         </div>
@@ -45,6 +44,7 @@
         <div id="slider" class="nivoSlider">
         <% @property.item_images.each do |item_image| %>
          <img src="<%= item_image.image_url%>"/>
+
          <% end%>
         </div>
       </div>
@@ -58,7 +58,7 @@
             </li>
             <li>
               <a id="tab2" class="tab-item2" data-scorll="#pro-data" href="#pro-data" data-anchor="pro-data" gaevent="#">
-               项目特色
+                项目特色
               </a>
             </li>
             <li>
@@ -91,12 +91,12 @@
         <div class="introduce" id="pro-invest">
           <h1>项目数据</h1>
           <ul>
-            <li><%="Bedroom:"%><span class="kind"><%=@property.bedrooms%></span></li>
-            <li><%="Bathroom:"%><span class="kind"><%=@property.bathrooms%></span></li>
-            <li><%="Reception room:"%><span class="kind"><%=@property.reception_rooms%></span></li>
-            <li><%="Building age:"%><span class="kind"><%=@property.building_age%></span></li>
-            <li><%="Indoor size:"%><span class="kind"><%=@property.indoor_size%></span></li>          
-            <li><%="Outdoor size:"%><span class="kind"><%=@property.outdoor_size%></span></li>
+            <li> 房屋类型：<span class="kind"><%= @property.bedrooms%>卧<%= @property.bathrooms%>卫<%= @property.reception_rooms%>厅</span></li>
+            <li>房产年龄：<span class="kind"><%=@property.building_age%></span></li>
+            <li>室内面积：<span class="kind"><%=@property.indoor_size%></span></li>          
+            <li>门厅面积：<span class="kind"><%=@property.outdoor_size%></span></li>
+            <li>房屋布局：<span class="kind"><%=@property.layout%></span></li>
+            <li>楼层数目：<span class="kind"><%=@property.floor%></span></li>
           </ul>
 
         </div>
@@ -105,7 +105,7 @@
         <div class="map" id="pro-map">
           <h1>项目位置</h1> 
           <div class="google" id="google">
-            <iframe width="640" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://ditu.google.cn/maps?f=q&amp;source=s_q&amp;hl=zh-CN&amp;geocode=&amp;q=<%=@property.building_name%>&amp;sll=<%=@property.latitude%>,<%=@property.longitude%>&amp;sspn=<%=@property.latitude%>,<%=@property.longitude%>&amp;brcurrent=3,0x0:0x0,0%3B5,0,0&amp;ie=UTF8&amp;hq=&amp;ll=<%=@property.latitude%>,<%=@property.longitude%>&amp;spn=<%=@property.latitude%>,<%=@property.longitude%>&amp;t=m&amp;z=11&amp;output=embed"></iframe><br /><small><a href="http://ditu.google.cn/maps?f=q&amp;source=embed&amp;hl=zh-CN&amp;geocode=&amp;q=<%=@property.building_name%>&amp;sll=<%=@property.latitude%>,<%=@property.longitude%>&amp;sspn=<%=@property.latitude%>,<%=@property.longitude%>&amp;brcurrent=3,0x0:0x0,0%3B5,0,0&amp;ie=UTF8&amp;hq=&amp;ll=<%=@property.latitude%>,<%=@property.longitude%>&amp;spn=<%=@property.latitude%>,<%=@property.longitude%>&amp;t=m&amp;z=11" style="color:#0000FF;text-align:left">Bigmap</a></small>
+            <iframe width="640" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://ditu.google.cn/maps?f=q&amp;source=s_q&amp;hl=zh-CN&amp;geocode=&amp;q=<%=@property.building_name%>&amp;sll=<%=@property.latitude%>,<%=@property.longitude%>&amp;sspn=<%=@property.latitude%>,<%=@property.longitude%>&amp;brcurrent=3,0x0:0x0,0%3B5,0,0&amp;ie=UTF8&amp;hq=&amp;ll=<%=@property.latitude%>,<%=@property.longitude%>&amp;spn=<%=@property.latitude%>,<%=@property.longitude%>&amp;t=m&amp;z=11&amp;output=embed"></iframe><br /><small><a href="http://ditu.google.cn/maps?f=q&amp;source=embed&amp;hl=zh-CN&amp;geocode=&amp;q=<%=@property.building_name%>&amp;sll=<%=@property.latitude%>,<%=@property.longitude%>&amp;sspn=<%=@property.latitude%>,<%=@property.longitude%>&amp;brcurrent=3,0x0:0x0,0%3B5,0,0&amp;ie=UTF8&amp;hq=&amp;ll=<%=@property.latitude%>,<%=@property.longitude%>&amp;spn=<%=@property.latitude%>,<%=@property.longitude%>&amp;t=m&amp;z=11" style="color:#0000FF;text-align:left">查看大图</a></small>
                
           </div>
         </div>
@@ -120,23 +120,23 @@
         <div id="feedback" class="wrap">
           <%= form_for([@property, @property.feedbacks.build],remote:true ) do |f| %>
             <div class="field">
-              <%= f.label "Name" %><br>
+              <%= f.label "姓名" %><br>
               <%= f.text_field :name %>
             </div>
             <div class="field">
-              <%= f.label "Phone" %><br>
+              <%= f.label "手机号" %><br>
               <%= f.telephone_field :phone %>
             </div>
             <div class="field">
-              <%= f.label "Email" %><br>
+              <%= f.label "电子邮箱" %><br>
               <%= f.text_field :email %>
             </div>
             <div class="field">
-              <%= f.label "Message" %><br>
+              <%= f.label "留言" %><br>
               <%= f.text_area :message %>
             </div>
             <div class="actions">
-              <%=f.submit "Submit"%>
+              <%=f.submit "提交"%>
             </div>
           <% end %>
         </div>
@@ -155,7 +155,7 @@
 function translate1(){
 
       document.getElementById("buliding_name").innerHTML="<%=@building_name1%>";
-      document.getElementById("description").innerHTML="<small>通过百度翻译，不准之处请客官谅解</small> <br><br><br><%=@description1%>";
+      document.getElementById("description").innerHTML="<%=@description1%>";
       document.getElementById("translate1").style.display="none";
       document.getElementById("translate2").style.display="block";
 }
@@ -163,7 +163,7 @@ function translate1(){
 
 function translate2(){
         document.getElementById("buliding_name").innerHTML="<%=@property.building_name%>";
-      document.getElementById("description").innerHTML="<%=@property.description.html_safe %>";
+      document.getElementById("description").innerHTML="<%=@property.description.html_safe%>";
       document.getElementById("translate1").style.display="block";
       document.getElementById("translate2").style.display="none";
       
