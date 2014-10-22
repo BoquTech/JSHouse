@@ -1,0 +1,1425 @@
+@charset "UTF-8";/* line 3, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/addresses.css.scss */
+.addresses #city {
+  position: relative;
+  min-height: 100%;
+}
+/* line 6, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/addresses.css.scss */
+.addresses #city .cc {
+  float: left;
+}
+/* line 9, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/addresses.css.scss */
+.addresses #city .hot {
+  border: 1px solid #fff;
+  margin: 10px;
+  height: 220px;
+  width: 300px;
+}
+/* line 14, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/addresses.css.scss */
+.addresses #city .hot img {
+  height: 220px;
+  width: 300px;
+  position: absolute;
+}
+/* line 20, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/addresses.css.scss */
+.addresses #city .price {
+  margin-top: 188px;
+  position: absolute;
+  height: 22px;
+  width: 290px;
+  color: #fff;
+  z-index: 1;
+  padding: 5px;
+}
+/* line 30, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/addresses.css.scss */
+.addresses #house {
+  margin-top: 20px;
+  height: 100%;
+  position: relative;
+}
+/* line 34, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/addresses.css.scss */
+.addresses #house h1 {
+  height: auto;
+}
+/* line 37, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/addresses.css.scss */
+.addresses #house li {
+  float: left;
+}
+/* line 40, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/addresses.css.scss */
+.addresses #house .hot {
+  background: #f8f8f8;
+  border: 1px solid #fff;
+  margin: 10px;
+  height: 226px;
+  width: 680px;
+  float: left;
+  padding: 10px;
+}
+/* line 48, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/addresses.css.scss */
+.addresses #house .hot img {
+  height: 226px;
+  width: 400px;
+}
+/* line 54, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/addresses.css.scss */
+.addresses #house .abstract {
+  width: 260px;
+  float: right;
+}
+/* line 57, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/addresses.css.scss */
+.addresses #house .abstract h1 {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #E34339;
+  line-height: 30px;
+}
+/* line 66, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/addresses.css.scss */
+.addresses #house .abstract small {
+  display: block;
+  font-size: 15px;
+  font-weight: normal;
+  color: #818080;
+  line-height: 24px;
+}
+/* line 73, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/addresses.css.scss */
+.addresses #house .abstract p {
+  margin-top: 10px;
+}
+/* line 78, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/addresses.css.scss */
+.addresses #house .number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #E34339;
+}
+/* line 5, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks {
+  background-color: #f8f8f8;
+}
+/* line 8, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks div.field, .feedbacks div.actions {
+  margin-bottom: 10px;
+}
+/* line 14, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks #feedback_name, .feedbacks #feedback_phone, .feedbacks #feedback_email {
+  width: 245px;
+  height: 25px;
+  font-size: 15px;
+  margin-left: 5px;
+  border: 1px solid #A4A4A4;
+}
+/* line 21, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks #feedback_message {
+  width: 245px;
+  height: 70px;
+  font-size: 15px;
+  margin-left: 5px;
+  border: 1px solid #A4A4A4;
+}
+/* line 29, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks input[type="submit"] {
+  display: block;
+  height: 35px;
+  width: 249px;
+  color: #fff;
+  background-color: #e90000;
+  border: 1px solid #e90000;
+  margin-left: 5px;
+  font-size: 15px;
+  border-radius: 2px;
+}
+/* line 40, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks input[type="submit"]:hover {
+  display: block;
+  height: 35px;
+  width: 249px;
+  color: #fff;
+  background-color: #ff0000;
+  border: 1px solid #ff0000;
+  margin-left: 5px;
+  font-size: 15px;
+  border-radius: 2px;
+}
+/* line 51, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* line 55, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks table tr th {
+  color: #fff;
+  background-color: #5b6378;
+  padding: 5px;
+  vertical-alogn: top;
+}
+/* line 61, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks table tr td {
+  text-align: center;
+  padding: 5px;
+  vertical-alogn: top;
+}
+/* line 66, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .message {
+  text-align: left;
+}
+/* line 69, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .list_description {
+  width: 60%;
+}
+/* line 72, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .list_description dl {
+  margin: 0;
+}
+/* line 75, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .list_description dt {
+  color: #244;
+  font-weight: bold;
+  font-size: larger;
+}
+/* line 80, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .list_description dd {
+  margin: 0;
+}
+/* line 84, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .list_action1 {
+  font-size: x-middle;
+  text-align: right;
+  padding-left: 1em;
+}
+/* line 89, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .list_action2 {
+  font-size: x-middle;
+  text-align: left;
+  padding-left: 1em;
+}
+/* line 94, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .list_line_even {
+  background: #e0f8f8;
+}
+/* line 97, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/feedbacks.css.scss */
+.feedbacks .list_line_odd {
+  background: #f8b0f8;
+}
+.skippr {
+	width:100%;
+	height:100%;
+	position: relative;
+	overflow:hidden;
+}
+
+.skippr > div {
+
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-size: 100% 100%;
+	background-position: 50% 62.5%;
+	background-repeat:no-repeat;
+
+}
+
+.skippr > img {
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+	width:100%;
+	min-height: 100%;
+}
+
+.skippr-nav-container {
+	position: absolute;
+	left:50%;
+	-webkit-transform:translate(-50%,0);
+	transform:translate(-50%,0);
+	-moz-transform:translate(-50%,0);
+	-ms-transform:translate(-50%,0);
+
+	bottom:25px;
+	overflow: auto;
+	z-index:999;
+
+}
+
+.skippr-nav-element {
+	cursor:pointer;
+	float:left;
+	background-color: rgba(255,255,255,0.5);
+	-webkit-transition: all .25s linear;
+	transition: all .25s linear;
+}
+
+.skippr-nav-element-bubble {
+	width:12px;
+	height:12px;
+	border-radius: 50%;
+	margin:0 4px;
+}
+
+.skippr-nav-element-block {
+	width:60px;
+	height:10px;
+}
+
+
+
+.skippr-nav-element:hover, .skippr-nav-element-active {
+	background-color:rgba(255,255,255,1);
+}
+
+
+.skippr-arrow {
+	position: absolute;
+	z-index:999;
+	top:50%;
+	-webkit-transform:translate(0%,-50%);
+	-moz-transform:translate(0%,-50%);
+	-ms-transform:translate(0%,-50%);
+	transform:translate(0%,-50%);
+
+	width:30px;
+	height:30px;
+	/*background-color: white;*/
+	transform-origin:center center;
+	-webkit-transform-origin:top left;
+	cursor: pointer;
+}
+
+.skippr-previous {
+	left:2.5%;
+	-webkit-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+	border-top:2px solid white;
+	border-left:2px solid white;
+}
+
+.skippr-next {
+	right:3.5%;
+	-webkit-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+	border-bottom:2px solid white;
+	border-right:2px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * jQuery Nivo Slider v2.3
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2010, Gilbert Pellegrom
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * March 2010
+ */
+ 
+/* www.jq22.com */
+/* The Nivo Slider styles */
+
+.nivoSlider {
+	position:relative;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	display:none;
+}
+/* The slices in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	height:100%;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:99;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+/* www.jq22.com */
+
+/* line 6, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #house {
+  margin-top: 20px;
+  position: relative;
+}
+/* line 9, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #house h1 {
+  height: auto;
+}
+/* line 12, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #house li {
+  float: left;
+}
+/* line 16, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #house .box {
+  border: 1px solid #fff;
+  margin: 10px;
+  height: 220px;
+  width: 300px;
+}
+/* line 21, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #house .box .price {
+  margin-top: 188px;
+  position: absolute;
+  height: 22px;
+  width: 290px;
+  background-color: #000;
+  font-size: 13px;
+  color: #fff;
+  z-index: 1;
+  padding: 5px;
+}
+/* line 32, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #house .box .price1 {
+  margin-left: 100px;
+  margin-top: 30px;
+  position: absolute;
+  height: 22px;
+  width: 80px;
+  background-color: #be0000;
+  font-size: 13px;
+  color: #fff;
+  z-index: 1;
+  padding: 5px;
+}
+/* line 44, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #house .box .show {
+  height: 220px;
+  width: 300px;
+  position: absolute;
+}
+/* line 49, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #house .box .hidden {
+  display: none;
+}
+/* line 55, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #house .abstract {
+  width: 260px;
+  float: right;
+}
+/* line 58, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #house .abstract h1 {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #E34339;
+  line-height: 30px;
+}
+/* line 67, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #house .abstract small {
+  display: block;
+  font-size: 15px;
+  font-weight: normal;
+  color: #818080;
+  line-height: 24px;
+}
+/* line 74, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #house .abstract p {
+  margin-top: 10px;
+}
+/* line 79, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #house .number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #E34339;
+}
+/* line 86, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #tabs {
+  width: 960px;
+  margin: auto;
+  border-bottom: 1px solid #e7e7e7;
+  height: 68px;
+  line-height: 68px;
+}
+/* line 93, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #tabs a {
+  color: #5c5c5c;
+  display: block;
+  height: 63px;
+  font-size: 24px;
+  line-height: 68px;
+  text-decoration: none;
+}
+/* line 103, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #tabs a:hover {
+  background-color: #fff;
+}
+/* line 108, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #tabs .nav-line {
+  background: #e7e7e7;
+  display: block;
+  height: 28px;
+  margin: 20px 13px 0 13px;
+  width: 1px;
+}
+/* line 116, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #tabs li {
+  float: left;
+}
+/* line 124, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd {
+  margin-top: 10px;
+  position: relative;
+  /*用户信息反馈*/
+}
+/* line 127, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core {
+  float: left;
+  width: 680px;
+  position: relative;
+  /*固定栏*/
+  /*详细信息*/
+}
+/* line 132, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .abstract {
+  position: relative;
+}
+/* line 134, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .abstract h1 {
+  float: left;
+  width: 100%;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 26px;
+  color: #ec462c;
+  line-height: 30px;
+}
+/* line 143, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .abstract h1 small {
+  display: block;
+  font-size: 15px;
+  font-weight: normal;
+  color: #818080;
+  line-height: 24px;
+}
+/* line 150, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .abstract h1 button {
+  float: right;
+  display: block;
+  margin-top: -30px;
+  height: 30px;
+  width: 70px;
+  color: #e90000;
+  background-color: #fff;
+  border: 1px solid #e90000;
+  font-size: 15px;
+  border-radius: 2px;
+}
+/* line 162, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .abstract h1 button:hover {
+  float: right;
+  display: block;
+  height: 30px;
+  width: 70px;
+  color: #fff;
+  background-color: #e90000;
+  border: 1px solid #e90000;
+  font-size: 15px;
+  border-radius: 2px;
+}
+/* line 174, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .abstract h1 button:active {
+  float: right;
+  display: block;
+  height: 30px;
+  width: 70px;
+  color: #fff;
+  background-color: #e90000;
+  border: 1px solid #e90000;
+  font-size: 20px;
+  border-radius: 2px;
+}
+/* line 185, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .abstract h1 .translate1 {
+  display: block;
+}
+/* line 188, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .abstract h1 .translate2 {
+  display: none;
+}
+/* line 194, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .abstract li {
+  margin-bottom: 10px;
+}
+/* line 198, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .abstract .kind {
+  margin-right: 10px;
+}
+/* line 202, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .abstract .price {
+  width: 35%;
+  position: relative;
+  float: right;
+  margin-top: 6%;
+  color: #ec462c;
+  font-size: 30px;
+}
+/* line 211, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .abstract .chack {
+  background-color: #ec462c;
+  color: #fff;
+  padding: 2px;
+  font-size: 13px;
+  font-weight: bold;
+}
+/* line 220, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .gallery {
+  width: 680px;
+  height: 500px;
+  margin-top: 20px;
+  position: relative;
+  font-family: "Microsoft Yahei";
+  background: #f8f8f8;
+}
+/* line 228, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .gallery #slider {
+  position: relative;
+  width: 680px;
+  height: 500px;
+  background: url(../house/images/slider/loading.gif) no-repeat 50% 50%;
+}
+/* line 234, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .gallery #slider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 680px;
+  height: 500px;
+  display: none;
+}
+/* line 244, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .gallery #slider a {
+  border: 0;
+  display: block;
+}
+/* line 249, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .gallery #slider .nivo-controlNav {
+  position: absolute;
+  left: 220px;
+  bottom: 20px;
+}
+/* line 254, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .gallery #slider .nivo-controlNav a {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url(../house/images/slider/bullets.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+  margin-right: 3px;
+  float: left;
+}
+/* line 266, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .gallery #slider .nivo-controlNav .active {
+  background-position: 0 -22px;
+}
+/* line 272, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .gallery #slider .nivo-directionNav a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../house/images/slider/arrows.png) no-repeat;
+  text-indent: -9999px;
+  border: 0;
+}
+/* line 280, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .gallery #slider .nivo-directionNav .nivo-nextNav {
+  background-position: -30px 0;
+  right: 15px;
+}
+/* line 285, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .gallery #slider .nivo-directionNav .nivo-prevNav {
+  left: 15px;
+}
+/* line 289, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .gallery #slider .nivo-caption {
+  text-shadow: none;
+  font-family: "Microsoft Yahei";
+}
+/* line 293, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .gallery #slider .nivo-caption a {
+  color: #efe9d1;
+  text-decoration: underline;
+}
+/* line 304, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .fix1 {
+  position: fixed;
+  top: 0px;
+  width: 680px;
+  z-index: 100;
+}
+/* line 311, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core .fix2 {
+  width: 680px;
+  position: relative;
+  margin-top: 20px;
+}
+/* line 318, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core #fix .flat-content-navbar {
+  position: relative;
+  box-shadow: inset 0 0 0 1px #f8f8f8;
+  border: 1px solid #f8f8f8;
+  height: 41px;
+  line-height: 41px;
+  background-color: #fff;
+  width: 680px;
+}
+/* line 326, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core #fix .flat-content-navbar li {
+  float: left;
+  width: 130px;
+  text-align: center;
+}
+/* line 331, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core #fix .flat-content-navbar li .tab-item1 {
+  background-color: #ec462c;
+  font-family: "Microsoft Yahei";
+  color: #fff;
+  display: block;
+  position: relative;
+  font-weight: bold;
+}
+/* line 341, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core #fix .flat-content-navbar li .tab-item2 {
+  background-color: #fff;
+  font-family: "Microsoft Yahei";
+  color: #ec462c;
+  display: block;
+  position: relative;
+}
+/* line 355, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core #deal-stuff {
+  margin-top: 20px;
+  width: 680px;
+  position: relative;
+}
+/* line 360, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core #deal-stuff h1 {
+  font-size: 25px;
+  color: #ec462c;
+  margin-top: 30px;
+  width: auto;
+  border-bottom: 1px solid #f8f8f8;
+  padding-bottom: 20px;
+}
+/* line 370, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core #deal-stuff .introduce p {
+  margin: 21px 0;
+  color: #000;
+  font-size: 15px;
+}
+/* line 375, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core #deal-stuff .introduce li {
+  margin: 10px;
+}
+/* line 380, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core #deal-stuff .map {
+  position: relative;
+  padding: 0px;
+  margin-top: 20px;
+  height: 650px;
+}
+/* line 385, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .core #deal-stuff .map .google {
+  margin-top: 20px;
+  background-color: #f8f8f8;
+  position: absolute;
+  padding: 20px;
+}
+/* line 396, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .feedback {
+  float: right;
+  width: 280px;
+  margin-top: 10px;
+}
+/* line 401, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .feedback .information h3 {
+  padding-left: 10px;
+  border-bottom: 1px solid #f8f8f8;
+  border-left: 3px solid #ec462c;
+  font-size: 15px;
+  color: #000;
+  line-height: 26px;
+}
+/* line 409, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .feedback .information .wrap {
+  padding: 20px 10px;
+  margin: 20px 0;
+  background: #f8f8f8;
+}
+/* line 415, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .feedback .information .wrap .field, .properties #bd .feedback .information .wrap .actions {
+  margin-bottom: 10px;
+}
+/* line 419, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .feedback .information .wrap #feedback_name, .properties #bd .feedback .information .wrap #feedback_phone, .properties #bd .feedback .information .wrap #feedback_email {
+  width: 245px;
+  height: 25px;
+  font-size: 15px;
+  margin-left: 5px;
+  border: 1px solid #A4A4A4;
+}
+/* line 426, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .feedback .information .wrap #feedback_message {
+  width: 245px;
+  height: 70px;
+  font-size: 15px;
+  margin-left: 5px;
+  border: 1px solid #A4A4A4;
+}
+/* line 434, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .feedback .information .wrap input[type="submit"] {
+  display: block;
+  height: 35px;
+  width: 249px;
+  color: #fff;
+  background-color: #e90000;
+  border: 1px solid #e90000;
+  margin-left: 5px;
+  font-size: 15px;
+  border-radius: 2px;
+}
+/* line 445, /var/www/jshousev1.2/app/assets/stylesheets/properties.css.scss */
+.properties #bd .feedback .information .wrap input[type="submit"]:hover {
+  display: block;
+  height: 35px;
+  width: 249px;
+  color: #fff;
+  background-color: #ff0000;
+  border: 1px solid #ff0000;
+  margin-left: 5px;
+  font-size: 15px;
+  border-radius: 2px;
+}
+/* line 2, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+#notice {
+  color: green;
+}
+
+/* line 6, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 12, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 19, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 29, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 7, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/sessions.css.scss */
+.sessions .login {
+  top: 300px;
+  display: block;
+  width: 360px;
+  margin: auto;
+}
+/* line 12, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/sessions.css.scss */
+.sessions .login fieldset {
+  height: 220px;
+  margin-top: 150px;
+}
+/* line 17, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/sessions.css.scss */
+.sessions .login div {
+  margin-top: 25px;
+}
+/* line 21, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/sessions.css.scss */
+.sessions .login .input1 {
+  margin-left: 23px;
+}
+/* line 24, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/sessions.css.scss */
+.sessions .login #name, .sessions .login #password {
+  width: 245px;
+  height: 30px;
+  font-size: 15px;
+  margin-left: 5px;
+  border: 1px solid #A4A4A4;
+}
+/* line 32, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/sessions.css.scss */
+.sessions .login input[type="submit"] {
+  display: block;
+  height: 40px;
+  width: 320px;
+  color: #fff;
+  background-color: #e90000;
+  border: 1px solid #e90000;
+  margin-left: 5px;
+  font-size: 15px;
+  border-radius: 2px;
+}
+/* line 2, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header {
+  height: 80%;
+  position: relative;
+}
+/* line 5, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header .nav {
+  position: absolute;
+  z-index: 10;
+  left: 25%;
+  top: 5%;
+  right: 25%;
+}
+/* line 11, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header .nav img {
+  float: left;
+}
+/* line 14, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header .nav a {
+  font-size: 16px;
+  margin-left: 40px;
+  margin-top: 2%;
+  color: #fff;
+  float: left;
+  font-weight: bold;
+}
+/* line 22, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header .nav a:hover {
+  color: #993300;
+}
+/* line 25, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header .nav .city-icon {
+  float: left;
+  height: 20px;
+  width: 20px;
+  background: url("../house/images/city-icon.png") no-repeat;
+}
+/* line 33, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header #random2 {
+  height: 80%;
+  position: relative;
+}
+/* line 36, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header #random2 .banner {
+  height: 100%;
+}
+/* line 40, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header #random2 .information1 {
+  margin-left: 50%;
+  margin-top: 15%;
+  width: 40%;
+  padding: 10px;
+}
+/* line 45, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header #random2 .information1 h1 {
+  color: #fff;
+  font-size: 45px;
+}
+/* line 49, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header #random2 .information1 p {
+  font-size: 17px;
+  color: #fff;
+  font-weight: bold;
+}
+/* line 54, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header #random2 .information1 a {
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 15px;
+  border: 3px solid #fff;
+}
+/* line 61, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header #random2 .information1 a:hover {
+  font-weight: bold;
+  padding: 10px;
+  font-size: 15px;
+  color: #ec462c;
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+/* line 71, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header #random2 .information2 {
+  margin-left: 50%;
+  margin-top: 10%;
+  width: 40%;
+  padding: 10px;
+}
+/* line 76, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header #random2 .information2 h1 {
+  color: #fff;
+  font-size: 45px;
+}
+/* line 80, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header #random2 .information2 p {
+  font-size: 17px;
+  color: #fff;
+  font-weight: bold;
+}
+/* line 85, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header #random2 .information2 a {
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 15px;
+  border: 3px solid #fff;
+}
+/* line 92, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header #random2 .information2 a:hover {
+  font-weight: bold;
+  padding: 10px;
+  font-size: 15px;
+  color: #ec462c;
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+/* line 102, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header #random2 .information3 {
+  background-color: #000;
+  opacity: 0.7;
+  margin-left: 50%;
+  margin-top: 10%;
+  width: 40%;
+  padding: 10px;
+}
+/* line 109, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header #random2 .information3 h1 {
+  color: #fff;
+  font-size: 45px;
+}
+/* line 113, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header #random2 .information3 p {
+  font-size: 17px;
+  color: #fff;
+  font-weight: bold;
+}
+/* line 118, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header #random2 .information3 a {
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 15px;
+  border: 3px solid #fff;
+}
+/* line 125, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#index_header #random2 .information3 a:hover {
+  font-weight: bold;
+  padding: 10px;
+  font-size: 15px;
+  color: #ec462c;
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+
+/* line 136, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#hot_house {
+  margin-top: 1%;
+  position: relative;
+}
+/* line 139, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#hot_house h1 {
+  margin: 10px;
+}
+/* line 142, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#hot_house li {
+  float: left;
+}
+/* line 145, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#hot_house .hot {
+  border: 1px solid #fff;
+  margin: 10px;
+  height: 220px;
+  width: 300px;
+}
+/* line 150, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#hot_house .hot img {
+  height: 220px;
+  width: 300px;
+  position: absolute;
+}
+/* line 156, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+#hot_house .price {
+  margin-top: 188px;
+  position: absolute;
+  height: 22px;
+  width: 290px;
+  background-color: #000;
+  font-size: 13px;
+  color: #fff;
+  z-index: 1;
+  padding: 5px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+html{
+    color:#000;
+    background:#FFF;
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+}
+body{
+    height:100%;
+    width:100%;
+}
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,
+fieldset,legend,input,textarea,p,blockquote,th,td{
+margin:0;
+padding:0;
+}
+
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+fieldset,img{
+    border:0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var{
+    font-style:normal;
+    font-weight:normal;
+}
+
+ol,ul,li{
+    list-style:none;
+}
+
+caption,th{
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:100%;
+    font-weight:normal;
+}
+
+q:before,q:after{
+    content:'';
+}
+
+abbr,acronym{
+    border:0;
+    font-variant:normal;
+}
+
+sup{
+    vertical-align:text-top;
+}
+sub{
+    vertical-align: text-bottom;
+}
+
+input,textarea,select{
+    font-family:inherit;
+    font-size:inherit;
+    font-weight:inherit;
+    font-size:100%;
+}
+
+legend{
+    color:#000;
+}
+
+/*通用样式*/
+html, body {
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Microsoft Yahei";}
+
+a {
+  text-decoration: none;
+  font-family:"Microsoft Yahei";
+}
+
+
+a:hover{
+  color:#993300;
+  background-color:#ec462c;
+}
+p{
+  font-family:"Microsoft Yahei";
+}
+
+.containers{
+  width:980px;
+  margin:auto;
+  min-height:100%;
+  position:relative;
+}
+
+
+.containers{
+  width:980px;
+  margin:auto;
+  min-height:100%;
+  position:relative;
+}
+
+.pr
+.position-relative {
+    position: relative;
+}
+
+.clear{
+  font:0px/0px sans-serif;
+  clear:both;
+  display:block;
+
+}
+
+/*头部*/
+#header{
+  height:60px;
+  background:#ec462c;
+}
+.nav{
+   width:960px; 
+   position:relative;
+   margin:auto;
+   padding-top:20px;
+
+}
+.nav a{
+   
+  font-size:16px;
+  margin-right:40px;
+  color:#fff;
+    float:left;
+  font-weight:bold;
+}
+.nav a:hover{
+  color:#993300;
+  background-color: #ec462c;
+
+  
+}
+.nav h1{
+  color:#fff;
+  float:right;
+  font-weight:bold;
+}
+.icon {
+  float:left;
+    height: 50px;
+    width: 120px;
+  background: url("http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/icon1.png") no-repeat ;
+  margin-left:16%;
+  margin-top:8px;
+}
+
+
+.home-icon {
+  float:left;
+  
+    height: 20px;
+    width: 20px;
+  background: url("../house/images/home-icon.png") no-repeat ;
+}
+
+.city-icon{
+  float:left;
+    height: 20px;
+    width: 20px;
+  background: url("../house/images/city-icon.png") no-repeat ;
+}
+/*导航部分*/
+.tabs{
+  width:960px;
+  margin:auto;
+  border-bottom: 1px solid #e7e7e7;
+    height: 68px;
+    line-height: 68px;
+}
+
+.tabs a{
+
+    color: #5c5c5c;
+    display: block;
+    height: 63px;
+    font-size: 24px;
+    line-height: 68px;
+    text-decoration: none;
+}
+.tabs li{
+  float:left;
+}
+.tabs h1{
+  color:#5c5c5c;s
+  height: 63px;
+  font-size: 24px;
+}
+
+.nav-line {
+    background: #e7e7e7;
+    display: block;
+    height: 28px;
+    margin: 20px 13px 0 13px;
+    width: 1px;
+}
+
+
+
+
+/*尾部*/
+
+#footer{
+  background:#ec462c;
+  position: relative;
+    
+}
+
+.ft-top{
+  margin-top:20px;
+  padding-top:10px;
+  height:100%;
+  padding-bottom:10px;
+}
+.ft-top ul{
+  float:right;
+}
+
+.ft-top li{
+  color:#fff;
+    margin-left:10px;
+    float:right;
+}
+
+.ft-top a{
+  font-weight:bold;
+  color:#fff;
+  font-size:13px;
+}
+
+.ft-bottom{
+  border-top:1px solid #fff;
+  padding-bottom:20px;
+}
+
+.ft-bottom h1{
+  margin-top:10px;
+  color:#fff;
+  font-size:12px;
+  font-weight:bold;
+}
+
+.ft-bottom a{
+  margin-left:10px;
+  color:#fff;
+  font-size:11px;
+  font-weight:bold;
+}
+
+
+/*返回顶部*/
+
+#back-to-top{
+  display:none;
+  position:fixed;
+  top:80%;
+  left:50%;
+  cursor:pointer;
+  margin-top:-50px;
+  margin-left:520px;
+  width:40px;
+  height:40px;
+  background:url(../house/images/top.png) no-repeat ;
+}
+
+

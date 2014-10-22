@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'properties#index'
+  
   get 'welcome/index'
   resources :addresses do
     resources :properties 
