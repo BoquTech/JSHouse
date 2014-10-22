@@ -18,7 +18,7 @@
       <div id="masonry" class="container-fluid">
           <% @properties.each do |property| %>
             <div class="box">
-              <a href="<%=property_path(property)%>">
+              <a href="<%=property_path(property)%>" target="_blank">
                   <img   src="<%=property.item_images.first.image_url%>"/>
                   <a class="price"><%=property.building_name+","+property.address %></a>
                 </a>
@@ -37,6 +37,4 @@
 
 <%=render 'public/footer'%>
 <a id="back-to-top"></a>
-<script>
-var image=document.getElementBy
 

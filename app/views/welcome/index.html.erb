@@ -1,92 +1,40 @@
-	<div id="index_header">
+<%=render 'public/header'%>   
 
-		 <div class="nav">
-		 	<img src="http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/icon1.png"></img>
-		     <a href="../addresses">
-		     	<div class="city-icon"></div>
-		     	城市
-		     </a>
-		 </div>	   	
-        <div id="random2">
-            <div style="background-image: url(http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/banner/banner1.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-    src='http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/banner/banner1.jpg',
-    sizingMethod='scale');">
-            	<div class="information1">
-            		<h1>墨尔本 William</h1>
-            		<p>威廉公寓地处墨尔本著名法律管辖区的心脏位置，在威廉街199号和小柏克街518号的拐角处。该区域是真正的中心商业地区，便利设施随处可见，还能享受乘坐短途电车的额外福利，该电车将带你通往墨尔本的顶尖学府，市场和鼎鼎大名的购物区。</p>
-            		<br>
-            		<a href="./house/william.html">点击查看</a>
-            	</div>
-            </div>
-            <div style="background-image: url(http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/banner/banner2.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-    src='http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/banner/banner2.jpg',
-    sizingMethod='scale');">
-            	<div class="information2">
-            	<h1>布里斯班 Newstead Towers</h1>
-            	<br>
-            	<p>澳大利亚布里斯班是世界上发展速度最快的成熟城市，Newstead Towers 就坐落于该市新兴的 Gasworks 区内，地理位置优越，是布里斯班现代城市生活的典范。您将有机会以低于当地中间房价的优惠价格，购置该高档项目中的单位...</p>
-            		<br>
-            		<a href="./house/newstead.html">点击查看</a>
-            	</div>
-            </div> 
-            <div style="background-image: url(http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/banner/banner3.jpg);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-    src='http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/banner/banner3.jpg',
-    sizingMethod='scale');">
-            	<div class="information3">
-            		<h1>布罗姆利 STMARKS SQ</h1>
-            	    <p>布罗姆利(Bromley)面积约59平方英里是伦敦最大的区,其绿化区延伸至肯特郡(Kent)和萨里(Surrey). 布罗姆利(Bromley)拥有优美清静的环境亦同时拥有完善的交通配套,由布罗姆利(Bromley)乘坐火车直达伦敦市中心维多利亚(Victoria)只需16分钟, 所以是上班族置业的热门地方.</p>
-            		<br>
-            		<a href="./house/bromley.html">点击查看</a>
-            	</div>
-            </div>   
-        </div>	
-	</div>
-	
-           
-<div class="clear"> </div>
+<!--导航部分-->
+   <div class="tabs">
+            <ul>
+              <li>
+                  <h1>所有房产</h1>
+              </li>
+            </ul> 
+    </div>  
+
+    <div class="clear"> </div>
+
 <!--主体部分-->
-	
-	<div id="hot_house">
-		<div class="containers">
-		    <h1>热门房产</h1>
-		    <ul>
-		    	<li>
-		    		<div class="hot">
-                        <a href="./house/william.html">
-		    			    <img src="http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/william/firstpage.jpg"/>
-		    		    </a>
-		    			<a class="price">
-		    				The William'Melbourne,VIC墨尔本威廉公寓
-		    				</a>
+  
+  <div id="house">
+    <div class="containers">
+      <div id="masonry" class="container-fluid">
+          <% @properties.each do |property| %>
+            <div class="box">
+              <a href="<%=property_path(property)%>" target="_blank">
+                  <img   src="<%=property.item_images.first.image_url%>"/>
+                  <a class="price"><%=property.building_name+","+property.address %></a>
+                </a>
+            
+            </div>
+          <% end %>
 
-		    		</div>
-		    	</li>
-		    	<li>
-		    		<div class="hot">
-		    			<a href="./house/hub.html">
-		    			<img src="http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/hub/firstpage.jpg"/>
-		    		    </a>
-		    			<a class="price">
-		    				“The Hub”,Richmond,VIC 维多利亚省,列治文</a>
-		    		</div>
-		    	</li>
-		    	<li>
-		    		<div class="hot">
-		    			<a href="./house/newstead.html">
-		    		    <img src="http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/newstead/firstpage.jpg"/>
-		    		    </a>
-		    			<a class="price">
-		    			 NEWSTEAD TOWERS 澳大利亚布里斯班</a>
-		    		</div>
-		    	</li>    
-		    	
-		    </ul>
-	    </div>
-	    <div class="clear"> </div>
+     
+        </div>       
+       </div>
+      </div>
 
-	</div>
+  </div>
+<div class="clear"> </div>
 
 
 <%=render 'public/footer'%>
-
+<a id="back-to-top"></a>
 
