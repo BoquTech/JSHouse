@@ -4,7 +4,7 @@
    <div class="tabs">
             <ul>
               <li>
-                  <h1><%="Hot"+" "+"Properties"%></h1>
+                  <h1>热门房产</h1>
               </li>
             </ul> 
     </div>  
@@ -16,11 +16,56 @@
   <div id="house">
     <div class="containers">
       <ul>
+        <li>
+            <div class="box">
+              <a href="../house/william.html" target="_blank" >
+                  <img class="show" src="http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/william/image1.png"/>
+                
+                  <a class="price">The William'Melbourne,VIC 墨尔本</a>
+                  <a class="price1">待定</a>
+                  <a class="price2"></a>
+                  </a>            
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <a href="../house/newstead.html" target="_blank" >
+                  <img class="show" src="http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/newstead/image1.png"/>
+                
+                  <a class="price">NEWSTEAD TOWERS 布里斯班</a>
+                  <a class="price1">待定</a>
+                  <a class="price2"></a>
+                  </a>            
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <a href="../house/hub" target="_blank" >
+                  <img class="show" src="http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/hub/image1.png"/>
+                
+                  <a class="price"> “The Hub”, Richmond, VIC 墨尔本</a>
+                  <a class="price1">待定</a>
+                  <a class="price2"></a>
+                  </a>            
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <a href="../house/bromley.html" target="_blank" >
+                  <img class="show" src="http://jshouse.oss-cn-hangzhou.aliyuncs.com/images/bromley/image3.png"/>
+                
+                  <a class="price"> STMARKS SQ 伦敦</a>
+                  <a class="price1">待定</a>
+                  <a class="price2"></a>
+                  </a>            
+            </div>
+          </li>
+
           <% @properties.each do |property| %>
           <li>
             <div class="box">
               <a href="<%=property_path(property)%>" target="_blank" >
-                  <img class="show" src="<%=property.item_images.first.image_url%>" onerror="this.src='../house/firstpage.jpg'"/>
+                  <img class="show" src="<%=property.item_images.first.image_url%>"/>
                 
                   <a class="price"><%= property.building_name+","+property.address%></a>
                   <a class="price1"><%="$"+property.buy.to_i.to_s%></a>

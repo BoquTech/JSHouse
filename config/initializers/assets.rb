@@ -7,8 +7,9 @@ Rails.application.config.assets.precompile += %w( jquery.nivo.slider.pack.js )
 Rails.application.config.assets.precompile += %w( nivo-slider.css )
 Rails.application.config.assets.precompile += %w( fix_bar.js )
 Rails.application.config.assets.precompile += %w( top.js )
+Rails.application.config.assets.precompile += %w( jquery.skippr.js )
 Rails.application.config.assets.precompile += %w( jquery.skippr.css )
-
+Rails.application.config.assets.precompile += %w( properties.js )
 
 
 # Precompile additional assets.
