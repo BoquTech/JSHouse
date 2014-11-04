@@ -25,7 +25,6 @@ html{
 body{
     height:100%;
     width:100%;
-
 }
 article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
 
@@ -44,7 +43,6 @@ table{
 fieldset,img{
     border:0;
 }
- 
 
 address,caption,cite,code,dfn,em,strong,th,var{
     font-style:normal;
