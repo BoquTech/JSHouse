@@ -200,124 +200,27 @@
 .feedbacks .list_line_odd {
   background: #f8b0f8;
 }
-.skippr {
-	width:100%;
-	height:100%;
-	position: relative;
-	overflow:hidden;
-}
+@charset "utf-8";
 
-.skippr > div {
+.fx_grid_c1{width:990px;margin:0 auto}
 
-	position: absolute;
-	width:100%;
-	height:100%;
-	background-size: 100% 100%;
-	background-position: 50% 62.5%;
-	background-repeat:no-repeat;
+.fx_banner{background:#f0f0f0;width:1903px;overflow:hidden;position:relative}
+.fx_banner_inner{position:relative;height:502px}
 
-}
+.fx_banner_img{width:20000px}
+.fx_banner_img li{float:left;height:502px;width:1903px;position:relative}
+.fx_banner_link{position:absolute;top:0;left:0;width:100%;height:502px;cursor:pointer}
 
-.skippr > img {
-	position:absolute;
-	top:50%;
-	left:50%;
-	-webkit-transform:translate(-50%,-50%);
-	-moz-transform:translate(-50%,-50%);
-	-ms-transform:translate(-50%,-50%);
-	transform:translate(-50%,-50%);
-	width:100%;
-	min-height: 100%;
-}
-
-.skippr-nav-container {
-	position: absolute;
-	left:50%;
-	-webkit-transform:translate(-50%,0);
-	transform:translate(-50%,0);
-	-moz-transform:translate(-50%,0);
-	-ms-transform:translate(-50%,0);
-
-	bottom:25px;
-	overflow: auto;
-	z-index:999;
-
-}
-
-.skippr-nav-element {
-	cursor:pointer;
-	float:left;
-	background-color: rgba(255,255,255,0.5);
-	-webkit-transition: all .25s linear;
-	transition: all .25s linear;
-}
-
-.skippr-nav-element-bubble {
-	width:12px;
-	height:12px;
-	border-radius: 50%;
-	margin:0 4px;
-}
-
-.skippr-nav-element-block {
-	width:60px;
-	height:10px;
-}
-
-
-
-.skippr-nav-element:hover, .skippr-nav-element-active {
-	background-color:rgba(255,255,255,1);
-}
-
-
-.skippr-arrow {
-	position: absolute;
-	z-index:999;
-	top:50%;
-	-webkit-transform:translate(0%,-50%);
-	-moz-transform:translate(0%,-50%);
-	-ms-transform:translate(0%,-50%);
-	transform:translate(0%,-50%);
-
-	width:30px;
-	height:30px;
-	/*background-color: white;*/
-	transform-origin:center center;
-	-webkit-transform-origin:top left;
-	cursor: pointer;
-}
-
-.skippr-previous {
-	left:2.5%;
-	-webkit-transform:rotate(-45deg);
-	transform:rotate(-45deg);
-	border-top:2px solid white;
-	border-left:2px solid white;
-}
-
-.skippr-next {
-	right:3.5%;
-	-webkit-transform:rotate(-45deg);
-	transform:rotate(-45deg);
-	border-bottom:2px solid white;
-	border-right:2px solid white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.fx_banner .child{position:absolute;width:1903px;height:502px}
+.fx_banner_common{position:relative}
+.fx_banner_common a{position:absolute;top:50%;margin-top:-315px;width:41px;height:119px;cursor:pointer;display:block;overflow:hidden;opacity:.5;filter:alpha(opacity=50);}
+.fx_banner_pre{left:0;background:url(img/ban_pre_24.png);}
+.fx_banner_next{right:0;background:url(img/ban_next_24.png);}
+.fx_banner_pre:hover,.fx_banner_next:hover{opacity:1;filter:alpha(opacity=100)}
+.fx_banner .control{width:200px;position:absolute;top:470px;left:50%;margin-left:-100px;text-align:center}
+.fx_banner .control li{display:inline-block;*display:inline;*zoom:1;margin:0 5px;width:18px;height:18px;border-radius:50%;cursor:pointer;background:#a0a183}
+.fx_banner .control li a{display:none}
+.fx_banner .control li.current{background:#ff7f02}
 /*
  * jQuery Nivo Slider v2.3
  * http://nivo.dev7studios.com
@@ -946,187 +849,33 @@
   font-size: 15px;
   border-radius: 2px;
 }
-/* line 2, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header {
-  height: 80%;
-  position: relative;
-}
-/* line 5, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header .nav {
-  position: absolute;
-  z-index: 10;
-  left: 25%;
-  top: 5%;
-  right: 25%;
-}
-/* line 11, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header .nav img {
-  float: left;
-}
-/* line 14, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header .nav a {
-  font-size: 16px;
-  margin-left: 40px;
-  margin-top: 2%;
-  color: #fff;
-  float: left;
-  font-weight: bold;
-}
-/* line 22, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header .nav a:hover {
-  color: #993300;
-}
-/* line 25, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header .nav .city-icon {
-  float: left;
-  height: 20px;
-  width: 20px;
-  background: url("../house/images/city-icon.png") no-repeat;
-}
-/* line 33, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header #random2 {
-  height: 80%;
-  position: relative;
-}
-/* line 36, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header #random2 .banner {
-  height: 100%;
-}
-/* line 40, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header #random2 .information1 {
-  margin-left: 50%;
-  margin-top: 15%;
-  width: 40%;
-  padding: 10px;
-}
-/* line 45, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header #random2 .information1 h1 {
-  color: #fff;
-  font-size: 45px;
-}
-/* line 49, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header #random2 .information1 p {
-  font-size: 17px;
-  color: #fff;
-  font-weight: bold;
-}
-/* line 54, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header #random2 .information1 a {
-  color: #fff;
-  font-weight: bold;
-  padding: 10px;
-  font-size: 15px;
-  border: 3px solid #fff;
-}
-/* line 61, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header #random2 .information1 a:hover {
-  font-weight: bold;
-  padding: 10px;
-  font-size: 15px;
-  color: #ec462c;
-  background-color: #fff;
-  border: 2px solid #fff;
-}
-/* line 71, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header #random2 .information2 {
-  margin-left: 50%;
-  margin-top: 10%;
-  width: 40%;
-  padding: 10px;
-}
-/* line 76, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header #random2 .information2 h1 {
-  color: #fff;
-  font-size: 45px;
-}
-/* line 80, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header #random2 .information2 p {
-  font-size: 17px;
-  color: #fff;
-  font-weight: bold;
-}
-/* line 85, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header #random2 .information2 a {
-  color: #fff;
-  font-weight: bold;
-  padding: 10px;
-  font-size: 15px;
-  border: 3px solid #fff;
-}
-/* line 92, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header #random2 .information2 a:hover {
-  font-weight: bold;
-  padding: 10px;
-  font-size: 15px;
-  color: #ec462c;
-  background-color: #fff;
-  border: 2px solid #fff;
-}
-/* line 102, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header #random2 .information3 {
-  background-color: #000;
-  opacity: 0.7;
-  margin-left: 50%;
-  margin-top: 10%;
-  width: 40%;
-  padding: 10px;
-}
-/* line 109, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header #random2 .information3 h1 {
-  color: #fff;
-  font-size: 45px;
-}
-/* line 113, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header #random2 .information3 p {
-  font-size: 17px;
-  color: #fff;
-  font-weight: bold;
-}
-/* line 118, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header #random2 .information3 a {
-  color: #fff;
-  font-weight: bold;
-  padding: 10px;
-  font-size: 15px;
-  border: 3px solid #fff;
-}
-/* line 125, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
-#index_header #random2 .information3 a:hover {
-  font-weight: bold;
-  padding: 10px;
-  font-size: 15px;
-  color: #ec462c;
-  background-color: #fff;
-  border: 2px solid #fff;
-}
-
-/* line 136, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+/* line 1, /Users/jsfundboqu/Desktop/project/jshouse/app/assets/stylesheets/welcome.css.scss */
 #hot_house {
   margin-top: 1%;
   position: relative;
 }
-/* line 139, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+/* line 4, /Users/jsfundboqu/Desktop/project/jshouse/app/assets/stylesheets/welcome.css.scss */
 #hot_house h1 {
   margin: 10px;
 }
-/* line 142, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+/* line 7, /Users/jsfundboqu/Desktop/project/jshouse/app/assets/stylesheets/welcome.css.scss */
 #hot_house li {
   float: left;
 }
-/* line 145, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+/* line 10, /Users/jsfundboqu/Desktop/project/jshouse/app/assets/stylesheets/welcome.css.scss */
 #hot_house .hot {
   border: 1px solid #fff;
   margin: 10px;
   height: 220px;
   width: 300px;
 }
-/* line 150, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+/* line 15, /Users/jsfundboqu/Desktop/project/jshouse/app/assets/stylesheets/welcome.css.scss */
 #hot_house .hot img {
   height: 220px;
   width: 300px;
   position: absolute;
 }
-/* line 156, /Users/jsfundboqu/Desktop/jsproject/JSHouse/app/assets/stylesheets/welcome.css.scss */
+/* line 21, /Users/jsfundboqu/Desktop/project/jshouse/app/assets/stylesheets/welcome.css.scss */
 #hot_house .price {
   margin-top: 188px;
   position: absolute;
@@ -1152,7 +901,6 @@
  *
 
 
-
  */
 
 html{
@@ -1166,6 +914,7 @@ html{
 body{
     height:100%;
     width:100%;
+
 }
 article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
 
@@ -1184,6 +933,7 @@ table{
 fieldset,img{
     border:0;
 }
+ 
 
 address,caption,cite,code,dfn,em,strong,th,var{
     font-style:normal;

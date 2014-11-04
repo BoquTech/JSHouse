@@ -28,12 +28,12 @@
           <ul>
             
             <li>
-              <%="Location:"%>
+              <%="位置:"%>
               <span id="position" class="position"><%= @property.address %></span>
-              <a class="chack" href="#pro-invest"><%= "See Map"%></a>
+              <a class="chack" href="#pro-invest"><%= "查看地图"%></a>
             </li>
             <li>
-              <%= "Price:"%>
+              <%= "价格:"%>
               <span class="kind"><%="$"+@property.buy.to_i.to_s%></span>
             </li>
           </ul>
@@ -54,23 +54,23 @@
         <div class="flat-content-navbar">
           <ul>
             <li>
-              <a id="tab1" class="tab-item1" data-scoll="#pro-introduce" href="#pro-introduce" data-anchor="#pro-introduce" gaevent="#">Introduction</a>
+              <a id="tab1" class="tab-item1" data-scoll="#pro-introduce" href="#pro-introduce" data-anchor="#pro-introduce" gaevent="#">项目介绍</a>
             </li>
             <li>
               <a id="tab2" class="tab-item2" data-scorll="#pro-data" href="#pro-data" data-anchor="pro-data" gaevent="#">
-                Freature
+                项目特色
               </a>
             </li>
             <li>
                 <a id="tab3" class="tab-item2" data-scroll="#pro-invest" href="#pro-invest" data-anchor="#pro-invest
                 " gaevent="#">
-                Data
+                项目数据
                 </a>
             </li>
               <li>
                 <a id="tab4" class="tab-item2" data-scroll="#pro-map" href="#pro-map" data-anchor="#pro-map
                 " gaevent="#">
-                Location
+                项目位置
                 </a>
             </li>
           </ul>
@@ -79,17 +79,17 @@
 
       <div id="deal-stuff">
         <div class="introduce" id="pro-introduce">
-          <h1>Introduction</h1>
+          <h1>项目介绍</h1>
           <p id="description"><%=@property.description.html_safe%></p>
         </div>
 
         <div class="introduce" id="pro-data">
-          <h1>Feature</h1>
+          <h1>项目特色</h1>
              <p class="description" id="feature"><%= @property.features.html_safe%></p>
         </div>
 
         <div class="introduce" id="pro-invest">
-          <h1>Data</h1>
+          <h1>项目数据</h1>
           <ul>
             <li><%="Bedroom:"%><span class="kind"><%=@property.bedrooms%></span></li>
             <li><%="Bathroom:"%><span class="kind"><%=@property.bathrooms%></span></li>
@@ -105,7 +105,7 @@
 
 
         <div class="map" id="pro-map">
-          <h1>Location</h1> 
+          <h1>项目位置</h1> 
           <div class="google" id="google">
             <iframe width="640" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://ditu.google.cn/maps?f=q&amp;source=s_q&amp;hl=zh-CN&amp;geocode=&amp;q=<%=@property.building_name%>&amp;sll=<%=@property.latitude%>,<%=@property.longitude%>&amp;sspn=<%=@property.latitude%>,<%=@property.longitude%>&amp;brcurrent=3,0x0:0x0,0%3B5,0,0&amp;ie=UTF8&amp;hq=&amp;ll=<%=@property.latitude%>,<%=@property.longitude%>&amp;spn=<%=@property.latitude%>,<%=@property.longitude%>&amp;t=m&amp;z=11&amp;output=embed"></iframe><br /><small><a href="http://ditu.google.cn/maps?f=q&amp;source=embed&amp;hl=zh-CN&amp;geocode=&amp;q=<%=@property.building_name%>&amp;sll=<%=@property.latitude%>,<%=@property.longitude%>&amp;sspn=<%=@property.latitude%>,<%=@property.longitude%>&amp;brcurrent=3,0x0:0x0,0%3B5,0,0&amp;ie=UTF8&amp;hq=&amp;ll=<%=@property.latitude%>,<%=@property.longitude%>&amp;spn=<%=@property.latitude%>,<%=@property.longitude%>&amp;t=m&amp;z=11" style="color:#0000FF;text-align:left">Bigmap</a></small>
                
@@ -118,27 +118,27 @@
 
     <div class="feedback">
       <div class="information">
-        <h3>Interesting</h3>
+        <h3>感兴趣</h3>
         <div id="feedback" class="wrap">
           <%= form_for([@property, @property.feedbacks.build],remote:true ) do |f| %>
             <div class="field">
-              <%= f.label "Name" %><br>
+              <%= f.label "姓名" %><br>
               <%= f.text_field :name %>
             </div>
             <div class="field">
-              <%= f.label "Phone" %><br>
+              <%= f.label "电话" %><br>
               <%= f.telephone_field :phone %>
             </div>
             <div class="field">
-              <%= f.label "Email" %><br>
+              <%= f.label "邮件" %><br>
               <%= f.text_field :email %>
             </div>
             <div class="field">
-              <%= f.label "Message" %><br>
+              <%= f.label "留言" %><br>
               <%= f.text_area :message %>
             </div>
             <div class="actions">
-              <%=f.submit "Submit"%>
+              <%=f.submit "提交"%>
             </div>
           <% end %>
         </div>
