@@ -120,7 +120,7 @@
       <div class="information">
         <h3>感兴趣</h3>
         <div id="feedback" class="wrap">
-          <%= form_for([@property, @property.feedbacks.build],remote:true ) do |f| %>
+          <%= form_for(@feedback,remote:true ) do |f| %>
             <div class="field">
               <%= f.label "姓名" %><br>
               <%= f.text_field :name %>

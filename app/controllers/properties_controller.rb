@@ -15,7 +15,7 @@ class PropertiesController < ApplicationController
   # GET /properties/1.json
   def show
 
-     
+    @feedback=Feedback.new
     @city=@property.city
     @address=Address.where(city: @city).first
     

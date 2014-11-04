@@ -8,7 +8,7 @@ class Property < ActiveRecord::Base
   
   before_create :set_uuid
   has_many :item_images 
-  has_many :feedbacks
+
 
   
 

@@ -1,5 +1,5 @@
 class FeedbacksController < ApplicationController
-  skip_before_action :authorize, only:[:new,:edit,:create,:update,:destroy]
+ skip_before_action :authorize, only:[:new ,:show,:edit,:create,:update,:destroy]
   before_action :set_feedback, only: [:show, :edit, :update, :destroy]
 
   # GET /feedbacks
@@ -25,12 +25,12 @@ class FeedbacksController < ApplicationController
   # POST /feedbacks
   # POST /feedbacks.json
   def create
-    @property = Property.find(params[:property_id])
-    @feedback = @property.feedbacks.create(feedback_params)
+    
+    @feedback = Feedback.create(feedback_params)
     respond_to do |format|
       if @feedback.save
         FeedbackNotifier.new_feedback(@feedback).deliver 
-        format.html { redirect_to property_path(@property) }
+        format.html { redirect_to @feedback }
         format.js
         format.json { render :show, status: :created, location: @feedback }
       else
@@ -48,7 +48,7 @@ class FeedbacksController < ApplicationController
         if @feedback.reply.present?
           FeedbackNotifier.reply_feedback(@feedback).deliver
         end
-        format.html { redirect_to @feedback, notice: 'Feedback was successfully updated.' }
+        format.html { redirect_to feedbacks_url, notice: 'Feedback was successfully updated.' }
         format.json { render :show, status: :ok, location: @feedback }
       else
         format.html { render :edit }
