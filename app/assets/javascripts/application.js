@@ -12,9 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require jquery-1.4.3.min
+//= require jquery.nivo.slider.pack
 //= require_tree
-//= require cocoon
 $(function() {
       $('#slider').nivoSlider();
   });
